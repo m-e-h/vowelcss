@@ -1,0 +1,69 @@
+/* --------------------------------------------------------------
+# Buttons
+-------------------------------------------------------------- */
+
+a.btn,
+a.button {
+	opacity: 1;
+	text-decoration: none;
+}
+
+input[type="submit"] {
+	background-color: var(--color-1);
+	color: #fff;
+}
+
+a.btn-hollow,
+.btn-hollow,
+input[type="reset"],
+input[type="button"] {
+	color: var(--color-1-dark);
+	background-color: var(--color-frost-4);
+	box-shadow: inset 0 0 0 0.125rem var(--color-1-dark);
+
+	&:hover,
+	&:focus,
+	&:active {
+		color: #fff;
+		background-color: var(--color-1-dark);
+		box-shadow: none;
+	}
+}
+
+.btn-round {
+	border-radius: 50%;
+	overflow: hidden;
+	height: var(--form-element-min-height);
+	width: var(--form-element-min-height);
+	margin-left: 0;
+	margin-right: 0;
+	padding: 0;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 3px 1px -2px rgba(0, 0, 0, 0.2), 0 1px 5px 0 rgba(0, 0, 0, 0.12);
+
+	&:hover {
+		opacity: 0.9;
+		box-shadow: 0 4px 5px 0 rgba(0, 0, 0, 0.14), 0 1px 10px 0 rgba(0, 0, 0, 0.12), 0 2px 4px -1px rgba(0, 0, 0, 0.2);
+	}
+
+	a {
+		color: inherit;
+		width: var(--form-element-min-height);
+		height: var(--form-element-min-height);
+		display: inline-block;
+		text-align: center;
+		border-radius: 50%;
+		padding: .5rem 0;
+		background-image: none;
+	}
+}
+
+.btn-sm {
+	font-size: 0.9rem;
+}
+
+.btn-lg {
+	font-size: 1.1rem;
+}

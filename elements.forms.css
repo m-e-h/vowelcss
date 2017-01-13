@@ -1,0 +1,158 @@
+/* -------------------------------------------------------------
+# Forms
+-------------------------------------------------------------- */
+
+form {
+	margin-bottom: var(--base-space);
+}
+
+input:not([type="button"]):not([type="reset"]):not([type="submit"]),
+select,
+textarea {
+	max-width: 100%;
+	border-radius: var(--border-radius) !important;
+	padding: 0.5em 0.625em !important;
+	border-width: 0 !important;
+	line-height: 1.5;
+	background-color: var(--form-element-background-color);
+	color: var(--form-element-color);
+	margin: 0;
+	vertical-align: baseline;
+	font-size: inherit;
+	font-family: inherit;
+	font-style: inherit;
+	font-weight: inherit;
+	box-shadow: inset 0 0 0 0.063rem var(--form-element-background-color);
+	transition-duration: var(--transition-time);
+	transition-timing-function: var(--animation-curve);
+	transition-property: color, background-color, box-shadow;
+
+	&:focus {
+		outline: 0;
+		background-color: color(#fff a(95%));
+		transition-duration: var(--transition-time-out);
+		transition-timing-function: var(--animation-curve-out);
+		box-shadow: inset 0 0 0 0.063rem var(--color-links-hover) !important;
+	}
+}
+
+button,
+[type="button"],
+[type="date"],
+[type="datetime"],
+[type="datetime-local"],
+[type="email"],
+[type="month"],
+[type="number"],
+[type="password"],
+[type="reset"],
+[type="search"],
+[type="submit"],
+[type="tel"],
+[type="text"],
+[type="time"],
+[type="url"],
+[type="week"],
+select,
+textarea {
+	min-height: var(--form-element-min-height);
+}
+
+input[aria-invalid=true],
+select[aria-invalid=true],
+textarea[aria-invalid=true] {
+	box-shadow: inset 0 0 0 0.063rem var(--red) !important;
+}
+
+legend {
+	font-size: 1.25rem;
+	font-weight: 700;
+}
+
+textarea {
+	display: block;
+	width: 100%;
+	resize: vertical;
+}
+
+label {
+	font-size: 0.875rem;
+	font-weight: 700;
+	display: block;
+	margin-bottom: var(--space-1);
+}
+
+input[type=checkbox],
+input[type=radio] {
+	display: inline-block;
+	vertical-align: middle;
+	margin: 0 var(--space-1) 0 0;
+}
+
+input[type="number"] {
+	width: auto; /* Firefox 36+ */
+}
+
+select {
+	@mixin icon select-arrows, #678695 ;
+	background-size: 1em;
+	background-position: 98% 50%;
+	padding-right: 1.25em !important;
+	-moz-appearance: none; /* Firefox 40+ */
+	-webkit-appearance: none; /* Chrome 45+ */
+
+	&::-ms-expand {
+		display: none; /* Edge 12+, Internet Explorer 11- */
+	}
+
+	&::-ms-value {
+		color: currentColor; /* Edge 12+, Internet Explorer 11- */
+	}
+}
+
+input[type=search] {
+	@mixin icon search, #678695 ;
+	background-size: 1.4em;
+	background-position: 97% 50%;
+	padding-right: 1.5em;
+}
+
+.search-form .search-submit {
+	border: 0;
+	clip: rect(0 0 0 0);
+	height: 1px;
+	min-height: 0;
+	margin: -1px;
+	overflow: hidden;
+	padding: 0;
+	position: absolute;
+	width: 1px;
+}
+
+input[value=Other]:not(:focus) {
+	color: var(--color-grey-ui);
+}
+
+::-webkit-input-placeholder {
+	color: inherit;
+	opacity: 0.54;
+}
+
+[class*="u-bg-"]:not(.u-bg-white) {
+	input:not([type="button"]):not([type="reset"]):not([type="submit"]),
+	select,
+	textarea {
+		background-color: var(--color-frost-4);
+
+		&:focus {
+			background-color: color(#fff a(95%));
+		}
+	}
+}
+
+input:disabled,
+input[readonly] {
+	pointer-events: none;
+	cursor: default;
+	opacity: 0.5;
+}

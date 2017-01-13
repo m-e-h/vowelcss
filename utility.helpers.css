@@ -1,0 +1,169 @@
+/* #HELPERS
+\*------------------------------------ */
+
+@context pcSpec {
+	.u-color-inherit,
+	.u-color-inherit * {
+		color: inherit;
+	}
+
+	.u-currentcolor_a a {
+		color: currentColor;
+	}
+
+	.u-currentcolor {
+		color: currentColor;
+	}
+
+	.u-no-link {
+		box-shadow: none;
+	}
+
+	.u-link[class] {
+		color: var(--color-links);
+		text-decoration: none;
+		font-weight: 600;
+		letter-spacing: 0.02em;
+		vertical-align: middle;
+		transition-duration: var(--transition-time);
+		transition-timing-function: var(--animation-curve);
+		transition-property: all;
+		border-radius: 0.125rem;
+		box-shadow: inset 0 -1px 0 0 color(var(--color-grey-ui) a(40%));
+	}
+
+	.u-link[class]:hover,
+	.u-link[class].active,
+	.u-link[class]:active,
+	.u-link[class]:focus {
+		color: var(--color-links-hover);
+		background-color: color(var(--color-grey-ui) a(20%));
+		transition-duration: var(--transition-time-out);
+		transition-timing-function: var(--animation-curve-out);
+	}
+
+	.u-strip-space {
+		margin: 0;
+		padding: 0;
+
+		> * {
+			margin: 0;
+			padding: 0;
+		}
+	}
+
+	.u-spacer1 {
+		min-height: 1rem;
+	}
+
+	.u-spacer16 {
+		min-height: 1.6rem;
+	}
+
+	.u-spacer20 {
+		min-height: 2rem;
+	}
+
+	.u-spacer3 {
+		min-height: 3rem;
+	}
+
+	/* Opacity */
+	.u-opacity {
+		opacity: var(--opacity);
+	}
+
+	.u-opacity1 {
+		opacity: 1;
+	}
+
+	.hidden {
+		display: none;
+	}
+
+	@media (--xs) {
+		.hidden-xs {
+			display: none;
+		}
+	}
+
+	@media (--sm) {
+		.hidden-sm {
+			display: none;
+		}
+	}
+
+	@media (--md) {
+		.hidden-md {
+			display: none;
+		}
+	}
+
+	@media (--lg) {
+		.hidden-lg {
+			display: none;
+		}
+	}
+
+	.screen-reader-text,
+	.visuallyhidden {
+		border: 0;
+		clip: rect(0 0 0 0);
+		height: 1px;
+		margin: -1px;
+		overflow: hidden;
+		padding: 0;
+		position: absolute;
+		width: 1px;
+		white-space: nowrap;
+	}
+
+	.visuallyhidden.focusable:active,
+	.visuallyhidden.focusable:focus {
+		clip: auto;
+		height: auto;
+		margin: 0;
+		overflow: visible;
+		position: static;
+		width: auto;
+		white-space: inherit;
+	}
+
+	.clear::before,
+	.clear::after {
+		content: "";
+		display: table;
+	}
+
+	.clear::after {
+		clear: both;
+	}
+
+	.alignleft {
+		float: left;
+		margin-right: 1.5em;
+		margin-bottom: 1.5em;
+	}
+
+	.alignright {
+		float: right;
+		margin-left: 1.5em;
+		margin-bottom: 1.5em;
+	}
+
+	.aligncenter {
+		clear: both;
+		display: block;
+		margin: 0 auto;
+	}
+
+	.disabled {
+		pointer-events: none;
+		cursor: default;
+		opacity: 0.5;
+	}
+
+	.admin-bar .if-admin-bar {
+		margin-top: 32px;
+	}
+}

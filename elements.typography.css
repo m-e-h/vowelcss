@@ -1,0 +1,74 @@
+/* #TYPOGRAPHY
+\*------------------------------------ */
+
+h1 {
+	font-size: var(--h2-mobile);
+
+	@media (--sm) {
+		font-size: var(--h2-fluid);
+	}
+
+	@media (--xl) {
+		font-size: var(--h2);
+	}
+}
+
+h2 {
+	font-size: var(--h2-mobile);
+
+	@media (--sm) {
+		font-size: var(--h2-fluid);
+	}
+
+	@media (--xl) {
+		font-size: var(--h2);
+	}
+}
+
+h3 {
+	font-size: var(--h3-mobile);
+
+	@media (--sm) {
+		font-size: var(--h3-fluid);
+	}
+
+	@media (--xl) {
+		font-size: var(--h3);
+	}
+}
+
+h4 {
+	font-size: var(--h4);
+}
+
+h5 {
+	font-size: var(--h5);
+}
+
+h6 {
+	font-size: var(--h5);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-weight: inherit;
+	line-height: 1.16;
+	margin-top: 0;
+	margin-bottom: 0.5em;
+
+	> a {
+		color: inherit;
+		font-weight: inherit;
+	}
+}
+
+h1[class],
+h2[class],
+h3[class],
+h4[class] {
+	margin: 0;
+}

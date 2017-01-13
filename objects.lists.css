@@ -1,0 +1,95 @@
+.u-list-naked,
+.u-list-reset {
+	list-style: none;
+	padding-left: 0;
+
+	> ul,
+	> li {
+		list-style: none;
+		padding-left: 0;
+		margin-left: 0;
+	}
+}
+
+.o-list-steps {
+	list-style-type: none;
+	padding-left: 0;
+
+	li {
+		counter-increment: step-counter;
+
+		&::before {
+			content: counter(step-counter);
+			margin-right: 1rem;
+			font-size: 1rem;
+			line-height: 1;
+			background-color: var(--color-grey-ui);
+			color: #fff;
+			font-weight: bold;
+			padding: 0.313rem 0.625rem;
+			border-radius: 50%;
+		}
+	}
+}
+
+.u-list-group,
+.o-list-group,
+.o-list-group-links {
+	padding-left: 0;
+	max-width: 100%;
+	font-size: 1.1rem;
+	list-style-type: none;
+	background-color: #fff;
+	box-shadow: var(--shadow-1);
+	border-radius: var(--border-radius);
+
+	> li {
+		position: relative;
+		display: inline-block;
+		width: 100%;
+		border-bottom: 0.063rem solid var(--color-grey-ui-light);
+
+		&:last-child {
+			border-bottom: 0;
+		}
+	}
+}
+
+.u-list-group > li,
+.o-list-group > li {
+	padding: 0.5rem 0.75rem;
+}
+
+.o-list-group-links > li a {
+	display: inline-block;
+	vertical-align: middle;
+	padding: 0.5rem 0.75rem;
+	max-width: 100%;
+	width: 100%;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+	color: inherit;
+	font-weight: inherit;
+}
+
+.o-list-group[class*=" bullet-"] > li {
+	padding-left: 2em;
+
+	&::before {
+		width: 1em;
+		height: 1em;
+		min-width: 1em;
+		background-size: contain;
+		margin-right: 0.5em;
+		margin-left: -1.5em;
+	}
+}
+
+.o-list-group.bullet-cross > li::before {
+	@mixin icon cross;
+}
+
+.o-list-group.bullet-heart > li::before {
+	@mixin icon heart;
+}

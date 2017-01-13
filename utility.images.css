@@ -1,0 +1,125 @@
+/* #UTILITY LAYOUT
+\*------------------------------------ */
+
+.u-of-cover {
+	object-fit: cover;
+	font-family: 'object-fit: cover;'
+}
+
+.u-of-contain {
+	object-fit: contain;
+	font-family: 'object-fit: contain;'
+}
+
+.u-bg-cover {
+	background-size: cover;
+}
+
+.u-bg-contain {
+	background-size: contain;
+}
+
+.u-bg-center {
+	background-position: center;
+}
+
+.u-bg-top {
+	background-position: top;
+}
+
+.u-bg-right {
+	background-position: right;
+}
+
+.u-bg-bottom {
+	background-position: bottom;
+}
+
+.u-bg-left {
+	background-position: left;
+}
+
+.u-bg-fixed {
+	background-attachment: fixed;
+}
+
+.u-bg-no-repeat {
+	background-repeat: no-repeat;
+}
+
+.u-frosted-image,
+.u-tinted-image {
+
+	> * {
+		position: relative;
+	}
+}
+
+.u-frosted-image::before,
+.u-tinted-image::before {
+	content: "";
+	height: 100%;
+	left: 0;
+	position: absolute;
+	top: 0;
+	width: 100%;
+}
+
+.u-frosted-image {
+
+	&::before {
+		background-color: var(--color-frost-3);
+	}
+	color: var(--root-color);
+}
+
+.u-tinted-image {
+
+	&::before {
+		background-color: var(--color-tint-3);
+	}
+	color: white;
+}
+
+.u-grad-overlay {
+
+	&::after {
+		background: -webkit-linear-gradient(rgba(0, 0, 0, 0.1) 40%, rgba(0, 0, 0, 0.6) 100%);
+		background: -o-linear-gradient(rgba(0, 0, 0, 0.1) 40%, rgba(0, 0, 0, 0.6) 100%);
+		background: linear-gradient(rgba(0, 0, 0, 0.1) 40%, rgba(0, 0, 0, 0.6));
+		content: "";
+		height: 100%;
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+	}
+	color: white;
+}
+
+.o-crop {
+	position: relative;
+	display: block;
+	overflow: hidden;
+	width: 100%;
+}
+
+.o-crop--1x1 {
+	padding-top: 100%;
+}
+
+.o-crop--4x3 {
+	padding-top: 75%;
+}
+
+.o-crop--16x9 {
+	padding-top: 56.25%;
+}
+
+.o-crop__content {
+	position: absolute;
+	top: 0;
+	height: auto;
+	left: 0;
+	width: 100%;
+}

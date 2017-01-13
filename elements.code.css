@@ -1,0 +1,62 @@
+code,
+kbd,
+pre,
+samp {
+	font-family: var(--monospace-font-family);
+}
+
+/* Github Style */
+code {
+	padding: 0;
+	padding-top: 0.2em;
+	padding-bottom: 0.2em;
+	margin: 0;
+	font-size: 85%;
+	background-color: var(--color-frost-3);
+	border-radius: var(--border-radius);
+}
+
+code::before,
+code::after {
+	letter-spacing: -0.2em;
+	content: "\00a0";
+}
+
+pre {
+	margin-top: 0;
+	margin-bottom: var(--base-space);
+	padding: var(--space-1);
+	overflow: auto;
+	font-size: 85%;
+	line-height: 1.45;
+	background-color: var(--color-frost-3);
+	border-radius: var(--border-radius);
+	word-wrap: normal;
+	max-height: 60vh;
+	tab-size: 4;
+}
+
+.highlight pre {
+	margin-bottom: 0;
+	word-break: normal;
+}
+
+pre code {
+	display: inline;
+	max-width: auto;
+	padding: 0;
+	margin: 0;
+	overflow: visible;
+	line-height: inherit;
+	word-wrap: normal;
+	border: 0;
+	font-size: 100%;
+	word-break: normal;
+	white-space: pre;
+	background: transparent;
+}
+
+pre code::before,
+pre code::after {
+	content: normal;
+}

@@ -1,0 +1,46 @@
+#menu-primary {
+	display: none;
+}
+
+@media (--lg) {
+	#menu-primary {
+		display: inline-block;
+	}
+
+	#nav_menu-5 {
+		display: none;
+	}
+}
+
+.toggle-text {
+	display: none;
+}
+
+@media (--md) {
+	.toggle-text {
+		display: inline-block;
+	}
+}
+
+.entry-title {
+	width: 100%;
+}
+
+.contact-info svg {
+	opacity: var(--opacity);
+	margin-right: 0.25rem;
+}
+
+.site-wrap {
+	min-height: 100vh;
+	padding-top: 3.5rem;
+}
+
+.comments-area {
+	padding-left: 2.5rem;
+	padding-right: 2.5rem;
+}
+
+.entry-header + .entry-summary {
+	padding-top: 0;
+}

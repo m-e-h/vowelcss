@@ -1,0 +1,34 @@
+/* #LISTS
+\*------------------------------------ */
+
+ul,
+ol,
+dl {
+	list-style-type: none;
+	margin-top: 0;
+	margin-bottom: 1rem;
+}
+
+ul:last-child,
+ol ol,
+ul ul,
+ol ul,
+ul ol {
+	margin-bottom: 0;
+}
+
+li {
+	padding: 0.2em 0;
+}
+
+/* specify the list style of nav lists */
+nav ol,
+nav ul,
+nav li {
+	padding: 0;
+	margin: 0;
+}
+
+nav li a {
+	margin: 0;
+}

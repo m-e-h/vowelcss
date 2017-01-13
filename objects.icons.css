@@ -1,0 +1,195 @@
+.v-icon {
+	width: 1em;
+	height: 1em;
+	fill: currentColor;
+}
+
+svg[stroke-width] {
+	fill: transparent;
+	stroke: currentColor;
+}
+
+.icon-line {
+	width: 1em;
+	height: 1em;
+	fill: none;
+	stroke: currentcolor;
+	stroke-linecap: round;
+	stroke-linejoin: round;
+	stroke-width: 6.25%;
+}
+
+.icon-solid {
+	width: 1em;
+	height: 1em;
+	fill: none;
+	stroke: currentcolor;
+}
+
+.entry-title .doc-icon {
+	margin-left: auto;
+}
+
+.o-cell > .v-icon {
+	width: 100%;
+	height: auto;
+	max-width: 50%;
+}
+
+.icon-sm {
+	line-height: 1;
+	margin: 0;
+}
+
+.icon-md {
+	width: 100%;
+	max-width: 90px;
+	max-height: 90px;
+
+	svg {
+		height: auto;
+		width: 100%;
+	}
+}
+
+.icon-lg {
+	width: 100%;
+	max-width: 210px;
+	max-height: 210px;
+
+	svg {
+		height: auto;
+		width: 100%;
+	}
+}
+
+.icon-xl {
+	width: 100%;
+	max-width: 310px;
+	max-height: 310px;
+
+	svg {
+		height: auto;
+		width: 100%;
+	}
+}
+
+.icon-refresh {
+	@mixin fa $refresh;
+}
+
+.icon-account {
+	@mixin fa $user-circle-o;
+}
+
+.icon-menu {
+	@mixin fa $navicon;
+}
+
+.icon-close {
+	@mixin fa $times;
+}
+
+.icon-edit {
+	@mixin fa $pencil-square-o;
+}
+
+.o-alert {
+	display: flex;
+	align-items: center;
+}
+
+.icon-info::before {
+	@mixin fa $info-circle;
+
+	color: #005B80;
+}
+
+.icon-warning::before {
+	@mixin fa $exclamation-triangle;
+
+	color: #9E0800;
+}
+
+.icon-success::before {
+	@mixin fa $check-circle;
+
+	color: #276248;
+}
+
+.icon-heart::before {
+	@mixin fa $heart;
+}
+
+.icon-twitter::before,
+a[href*="twitter.com"]::before {
+	@mixin fa $twitter;
+
+	color: #1DA1F2;
+	opacity: 1;
+}
+
+a[href*="twitter.com"]::after {
+	content: none !important;
+}
+
+.icon-facebook::before,
+a[href*="facebook.com"]::before {
+	@mixin fa $facebook-official;
+
+	color: #3B5998;
+	opacity: 1;
+}
+
+a[href*="facebook.com"]::after {
+	content: none !important;
+}
+
+.icon-youtube::before,
+a[href*="youtube.com"]::before,
+a[href*="youtu.be"]::before {
+	@mixin fa $youtube-play;
+
+	color: #cd201f;
+	opacity: 1;
+}
+
+a[href*="youtube.com"]::after,
+a[href*="youtu.be"]::after {
+	content: none !important;
+}
+
+.icon-instagram::before {
+	@mixin fa $instagram;
+
+	opacity: 1;
+}
+
+a[href*="/documents/"]::before,
+.icon-pdf::before,
+a[href*=".pdf"]:not(.btn)::before {
+	@mixin fa $file-text-o;
+}
+
+.icon-map::before,
+a[href*="maps.google.com"]::before {
+	@mixin fa $map-marker;
+}
+
+a[href*=".doc"]:not(.btn)::before,
+a[href*=".docx"]:not(.btn)::before {
+	@mixin fa $file-word-o;
+}
+
+a[href*=".xls"]:not(.btn)::before,
+a[href*=".xlsx"]:not(.btn)::before {
+	@mixin fa $file-excel-o;
+}
+
+a[href*="tel:"]::before {
+	@mixin fa $phone;
+}
+
+a[href*="mailto:"]::before {
+	@mixin fa $envelope;
+}

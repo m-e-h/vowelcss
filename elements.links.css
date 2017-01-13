@@ -1,0 +1,64 @@
+/* #LINKS
+\*------------------------------------ */
+
+a {
+	color: var(--color-links);
+	text-decoration: none;
+	font-family: inherit;
+	font-weight: var(--font-bold);
+	letter-spacing: 0.02em;
+	transition-duration: var(--transition-time);
+	transition-timing-function: var(--animation-curve);
+	transition-property: all;
+	border-radius: 0.125rem;
+	overflow-wrap: break-word;
+	word-wrap: break-word;
+	word-break: break-word;
+
+	&:hover,
+	&.active,
+	&:active,
+	&:focus {
+		color: var(--color-links-hover);
+		background-color: var(--color-shade-2);
+		transition-duration: var(--transition-time-out);
+		transition-timing-function: var(--animation-curve-out);
+	}
+}
+
+a::before,
+a::after {
+	opacity: 0.6;
+}
+
+a::before {
+	margin-right: 0.3em;
+	margin-left: 0.2em;
+}
+
+a::after {
+	margin-left: 0.4em;
+}
+
+article:not(.arch-no-link-title) .entry-title {
+	padding: 0;
+}
+
+.entry-title {
+	.icon-sm {
+		margin-left: auto;
+	}
+}
+
+[class*="u-bg-1"] a,
+[class*="u-bg-2"] a {
+	color: inherit;
+}
+
+li > a,
+h1 > a,
+h2 > a,
+h3 > a,
+a[class] {
+	background-image: none;
+}

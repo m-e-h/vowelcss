@@ -1,0 +1,24 @@
+/* #BLOCKQUOTE
+\*------------------------------------ */
+
+blockquote {
+	padding: var(--space-1);
+	font-size: var(--h3);
+	line-height: 1.6;
+	text-align: center;
+	font-style: italic;
+	margin: 0;
+}
+
+cite {
+	text-align: right;
+	width: 100%;
+	display: inline-block;
+	font-family: var(--root-font-family);
+}
+
+blockquote cite {
+	font-size: var(--h6);
+	font-weight: normal;
+	font-style: normal;
+}

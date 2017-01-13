@@ -1,0 +1,155 @@
+/* #FLEXBOX
+\*------------------------------------ */
+
+.u-flex {
+	display: flex;
+}
+
+.u-inline-flex {
+	display: inline-flex;
+}
+
+.u-flex-rev {
+	flex-direction: row-reverse;
+}
+
+.u-flex-row-rev {
+	flex-direction: row-reverse;
+}
+
+.u-flex-col-rev {
+	flex-direction: column-reverse;
+}
+
+.u-flex-col {
+	flex-direction: column;
+}
+
+.u-flex-row {
+	flex-direction: row;
+}
+
+.u-flex-wrap {
+	flex-wrap: wrap;
+}
+
+.u-flex-nowrap {
+	flex-wrap: nowrap;
+}
+
+.u-flex-center {
+	align-items: center;
+}
+
+.u-flex-baseline {
+	align-items: baseline;
+}
+
+.u-flex-stretch {
+	align-items: stretch;
+}
+
+.u-flex-start {
+	align-items: flex-start;
+}
+
+.u-flex-end {
+	align-items: flex-end;
+}
+
+.u-flex-jb {
+	justify-content: space-between;
+}
+
+.u-flex-ja {
+	justify-content: space-around;
+}
+
+.u-flex-jc {
+	justify-content: center;
+}
+
+.u-flex-js {
+	justify-content: flex-start;
+}
+
+.u-flex-je {
+	justify-content: flex-end;
+}
+
+.u-flexed-start {
+	align-self: flex-start;
+}
+
+.u-flexed-end {
+	align-self: flex-end;
+}
+
+.u-flexed-center {
+	align-self: center;
+}
+
+.u-flexed-stretch {
+	align-self: stretch;
+}
+
+.u-flexed-1 {
+	flex: 1 1 0;
+}
+
+.u-flexed-auto {
+	flex: 1 1 auto;
+}
+
+.u-flexed-grow {
+	flex: 1 0 auto;
+}
+
+.u-flexed-s0 {
+	flex-shrink: 0;
+}
+
+.u-flexed-none {
+	flex: none;
+}
+
+.u-flexed-first {
+	order: -1;
+}
+
+.u-flexed-last {
+	order: 99999;
+}
+
+/* small */
+@media (--xs) {
+	.u-flex-sm {
+		display: flex;
+	}
+
+	.u-flex-col-sm {
+		flex-direction: column;
+	}
+}
+
+/* medium */
+@media (--md) {
+	.u-flex-md {
+		display: flex;
+	}
+
+	.u-flex-row-md {
+		flex-direction: row;
+	}
+}
+
+/* large */
+@media (--lg) {
+	.u-flex-lg {
+		display: flex;
+	}
+
+	.u-flex-row-lg {
+		flex-direction: row;
+	}
+}

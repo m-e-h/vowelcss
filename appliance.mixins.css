@@ -1,0 +1,22 @@
+/* #MIXINS
+\*------------------------------------ */
+
+@define-mixin icon $name: info, $fill: #90a4ae, $stroke: #fff, $sWidth: "0", $width: 1em, $height: 1em {
+	content: " ";
+	background-image: svg-load($name.svg, fill=$fill, stroke=$stroke, stroke-width=$sWidth, width=$width, height=$height);
+	background-repeat: no-repeat;
+	display: inline-block;
+}
+
+@define-mixin fa $icon {
+	content: $icon;
+	font-family: FontAwesome !important;
+	display: inline-flex;
+	align-items: center;
+	font-size: 0.9em;
+	font-weight: normal !important;
+	font-style: normal !important;
+	text-rendering: auto;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
