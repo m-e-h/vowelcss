@@ -3,12 +3,12 @@
 
 .u-of-cover {
 	object-fit: cover;
-	font-family: 'object-fit: cover;'
+	font-family: 'object-fit: cover;';
 }
 
 .u-of-contain {
 	object-fit: contain;
-	font-family: 'object-fit: contain;'
+	font-family: 'object-fit: contain;';
 }
 
 .u-bg-cover {
@@ -49,7 +49,6 @@
 
 .u-frosted-image,
 .u-tinted-image {
-
 	> * {
 		position: relative;
 	}
@@ -66,7 +65,6 @@
 }
 
 .u-frosted-image {
-
 	&::before {
 		background-color: var(--color-frost-3);
 	}
@@ -74,7 +72,6 @@
 }
 
 .u-tinted-image {
-
 	&::before {
 		background-color: var(--color-tint-3);
 	}
@@ -82,7 +79,6 @@
 }
 
 .u-grad-overlay {
-
 	&::after {
 		background: -webkit-linear-gradient(rgba(0, 0, 0, 0.1) 40%, rgba(0, 0, 0, 0.6) 100%);
 		background: -o-linear-gradient(rgba(0, 0, 0, 0.1) 40%, rgba(0, 0, 0, 0.6) 100%);

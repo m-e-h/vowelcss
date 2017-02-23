@@ -35,8 +35,3 @@ input[type="submit"] {
 		outline: 0;
 	}
 }
-
-a.btn:hover,
-a.button:hover {
-	color: inherit;
-}

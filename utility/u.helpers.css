@@ -139,31 +139,9 @@
 		clear: both;
 	}
 
-	.alignleft {
-		float: left;
-		margin-right: 1.5em;
-		margin-bottom: 1.5em;
-	}
-
-	.alignright {
-		float: right;
-		margin-left: 1.5em;
-		margin-bottom: 1.5em;
-	}
-
-	.aligncenter {
-		clear: both;
-		display: block;
-		margin: 0 auto;
-	}
-
 	.disabled {
 		pointer-events: none;
 		cursor: default;
 		opacity: 0.5;
-	}
-
-	.admin-bar .if-admin-bar {
-		margin-top: 32px;
 	}
 }

@@ -73,7 +73,7 @@ body {
 
 h1 {
 	font-size: 2em;
-	margin: .67em 0;
+	margin: 0.67em 0;
 }
 
 /* Grouping content (https://html.spec.whatwg.org/multipage/semantics.html#grouping-content)
@@ -195,8 +195,8 @@ dfn {
  */
 
 mark {
-	background-color: #ffff00;
-	color: #000000;
+	background-color: #ff0;
+	color: #000;
 }
 
 /**
@@ -221,11 +221,11 @@ sup {
 }
 
 sub {
-	bottom: -.25em;
+	bottom: -0.25em;
 }
 
 sup {
-	top: -.5em;
+	top: -0.5em;
 }
 
 /*
@@ -233,15 +233,15 @@ sup {
  * 1. Restore the coloring undone by defining the text shadow (opinionated).
  */
 
-::-moz-selection {
-	background-color: var(--oc-indigo-2); /* 1 */
+/*::-moz-selection {
+	background-color: var(--indigo1);
 	text-shadow: none;
 }
 
 ::selection {
-	background-color: var(--oc-indigo-2); /* 1 */
+	background-color: var(--indigo1);
 	text-shadow: none;
-}
+}*/
 
 /* Embedded content (https://html.spec.whatwg.org/multipage/embedded-content.html#embedded-content)
    ========================================================================== */
@@ -364,7 +364,7 @@ select { /* 1 */
  */
 
 button,
-html [type="button"], /* 1 */
+html [type="button"],
 [type="reset"],
 [type="submit"] {
 	-webkit-appearance: button; /* 2 */
@@ -486,7 +486,7 @@ textarea {
  * 1. Add the correct display in Edge, IE, and Firefox.
  */
 
-details, /* 1 */
+details,
 menu {
 	display: block;
 }

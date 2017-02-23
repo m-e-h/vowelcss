@@ -10,7 +10,7 @@
 
 @define-mixin fa $icon {
 	content: $icon;
-	font-family: FontAwesome !important;
+	font-family: 'FortAwesome' !important;
 	display: inline-flex;
 	align-items: center;
 	font-size: 0.9em;

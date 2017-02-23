@@ -25,6 +25,10 @@
 		margin: var(--space-05);
 	}
 
+	.u-mr05 {
+		margin-right: var(--space-05);
+	}
+
 	.u-m15 {
 		margin: var(--space-15);
 	}
@@ -256,7 +260,6 @@
 	}
 
 	@media (--md) {
-
 		.u-m2-md {
 			margin: var(--space-2);
 		}
@@ -344,5 +347,4 @@
 			margin-left: var(--space-4);
 		}
 	}
-
 }

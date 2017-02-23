@@ -28,37 +28,31 @@ a {
 
 a::before,
 a::after {
-	opacity: 0.6;
+	opacity: 0.8;
 }
 
 a::before {
 	margin-right: 0.3em;
-	margin-left: 0.2em;
+	margin-left: 0.1em;
 }
 
 a::after {
-	margin-left: 0.4em;
-}
-
-article:not(.arch-no-link-title) .entry-title {
-	padding: 0;
-}
-
-.entry-title {
-	.icon-sm {
-		margin-left: auto;
-	}
+	margin-left: 0.3em;
+	margin-right: 0.1em;
 }
 
 [class*="u-bg-1"] a,
 [class*="u-bg-2"] a {
 	color: inherit;
+	opacity: 0.8;
+
+	&:hover {
+		opacity: 1;
+	}
 }
 
+table a,
 li > a,
-h1 > a,
-h2 > a,
-h3 > a,
 a[class] {
 	background-image: none;
 }

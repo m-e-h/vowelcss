@@ -85,11 +85,3 @@
 		margin-left: -1.5em;
 	}
 }
-
-.o-list-group.bullet-cross > li::before {
-	@mixin icon cross;
-}
-
-.o-list-group.bullet-heart > li::before {
-	@mixin icon heart;
-}

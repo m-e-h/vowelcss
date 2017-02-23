@@ -3,6 +3,7 @@
 
 .breadcrumbs {
 	margin-bottom: var(--space-1);
+
 	ul {
 		display: flex;
 		flex-wrap: wrap;
@@ -17,18 +18,17 @@
 		font-style: italic;
 
 		&:not(:last-of-type)::after {
-			margin: 0 0.25em;
+			margin: 0 0.3em -0.05em;
 			content: '/';
-		    font-size: 1.25em;
-		    vertical-align: middle;
+			font-size: 1.25em;
 		}
 	}
 }
 
 .breadcrumbs a {
 	color: inherit;
-	line-height: 1.6;
-	opacity: var(--opacity);
+	font-weight: normal;
+	opacity: 0.9;
 
 	&:hover {
 		opacity: 1;
