@@ -163,6 +163,6 @@ iframe[src*="google.com/maps"] {
  *    See: http://caniuse.com/#feat=css-initial-value
  */
 .gm-style [aria-hidden='true'] { /* 1 */
-  display: block; /* 2 */
-  display: initial;
+	display: block; /* 2 */
+	display: initial;
 }

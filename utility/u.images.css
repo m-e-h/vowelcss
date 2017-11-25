@@ -68,6 +68,7 @@
 	&::before {
 		background-color: var(--color-frost-3);
 	}
+
 	color: var(--root-color);
 }
 
@@ -75,6 +76,7 @@
 	&::before {
 		background-color: var(--color-tint-3);
 	}
+
 	color: white;
 }
 
@@ -90,6 +92,7 @@
 		left: 0;
 		width: 100%;
 	}
+
 	color: white;
 }
 

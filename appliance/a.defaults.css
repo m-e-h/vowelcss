@@ -1,12 +1,8 @@
 /* Custom media queries */
 @custom-media --xs (max-width: 20rem);
-
 @custom-media --sm (min-width: 21rem);
-
 @custom-media --md (min-width: 40rem);
-
 @custom-media --lg (min-width: 64rem);
-
 @custom-media --xl (min-width: 90rem);
 
 /* global vars */
@@ -73,7 +69,6 @@
 	--grey: var(--gray3);
 	--blue-grey: #678695;
 	--grey-nuetral: #90a4ae;
-	//--black: #000;
 	--color-info: var(--blue4);
 	--color-info-light: var(--blue1);
 	--color-info-dark: var(--blue9);

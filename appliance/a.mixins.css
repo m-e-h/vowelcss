@@ -1,12 +1,12 @@
 /* #MIXINS
 \*------------------------------------ */
 
-@define-mixin icon $name: info, $fill: #90a4ae, $stroke: #fff, $sWidth: "0", $width: 1em, $height: 1em {
+/* @define-mixin icon $name: info, $fill: #90a4ae, $stroke: #fff, $sWidth: "0", $width: 1em, $height: 1em {
 	content: " ";
 	background-image: svg-load($name.svg, fill=$fill, stroke=$stroke, stroke-width=$sWidth, width=$width, height=$height);
 	background-repeat: no-repeat;
 	display: inline-block;
-}
+} */
 
 @define-mixin fa $icon {
 	content: $icon;

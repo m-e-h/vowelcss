@@ -1,8 +1,9 @@
 .animating {
 	transition-duration: var(--transition-time);
 	transition-timing-function: var(--animation-curve);
-	/*animation-fill-mode: both;
-    backface-visibility: hidden;*/
+
+	/* animation-fill-mode: both;
+    backface-visibility: hidden; */
 }
 
 .fadeIn {
