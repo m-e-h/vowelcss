@@ -2,23 +2,23 @@
 \*------------------------------------ */
 
 .u-shadow1 {
-	box-shadow: var(--shadow-1);
+	box-shadow: $shadow-1;
 }
 
 .u-shadow2 {
-	box-shadow: var(--shadow-2);
+	box-shadow: $shadow-2;
 }
 
 .u-shadow3 {
-	box-shadow: var(--shadow-3);
+	box-shadow: $shadow-3;
 }
 
 .u-shadow4 {
-	box-shadow: var(--shadow-4);
+	box-shadow: $shadow-4;
 }
 
 .u-shadow5 {
-	box-shadow: var(--shadow-5);
+	box-shadow: $shadow-5;
 }
 
 .u-shadow0 {

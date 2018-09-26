@@ -13,7 +13,7 @@
 */
 
 .entry-content .FlexEmbed {
-	margin-bottom: var(--base-space);
+	margin-bottom: $base-space;
 }
 
 .FlexEmbed {

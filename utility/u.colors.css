@@ -3,31 +3,31 @@
 
 /* Text Colors */
 .u-text-color.u-text-color {
-	color: var(--root-color);
+	color: $root-color;
 }
 
 .u-text-black {
-	color: var(--black);
+	color: black;
 }
 
 .u-text-grey {
-	color: var(--color-grey-ui);
+	color: $color-grey-ui;
 }
 
 .u-text-grey-sub {
-	color: var(--color-text-light);
+	color: $color-text-light;
 }
 
 .u-text-silver {
-	color: var(--silver);
+	color: $silver;
 }
 
 .u-text-white {
-	color: var(--white);
+	color: $white;
 }
 
 .u-text-muted {
-	color: var(--color-tint-3);
+	color: $color-tint-3;
 }
 
 .u-text-1 {
@@ -72,21 +72,21 @@
 }
 
 .u-bg-black {
-	background-color: var(--black);
+	background-color: black;
 }
 
 .u-bg-grey {
-	background-color: var(--color-grey-ui);
+	background-color: $color-grey-ui;
 }
 
 .u-bg-silver {
-	background-color: var(--silver);
-	color: var(--root-color);
+	background-color: $silver;
+	color: $root-color;
 }
 
 .u-bg-white {
-	background-color: var(--white);
-	color: var(--root-color);
+	background-color: $white;
+	color: $root-color;
 }
 
 /* Border Colors */
@@ -115,34 +115,34 @@
 }
 
 .u-b-black {
-	border-color: var(--black);
+	border-color: black;
 }
 
 .u-b-grey {
-	border-color: var(--color-grey-ui);
+	border-color: $color-grey-ui;
 }
 
 .u-b-silver {
-	border-color: var(--color-grey-ui-light);
+	border-color: $color-grey-ui-light;
 }
 
 /* Alerts */
 .u-bg-info {
-	background-color: var(--color-info-light);
-	color: var(--color-info-dark);
-	border-color: color(var(--color-info-dark) a(0.3));
+	background-color: $color-info-light;
+	color: $color-info-dark;
+	border-color: color-mod($color-info-dark a(0.3));
 }
 
 .u-bg-success {
-	background-color: var(--color-success-light);
-	color: var(--color-success-dark);
-	border-color: color(var(--color-success-dark) a(0.3));
+	background-color: $color-success-light;
+	color: $color-success-dark;
+	border-color: color-mod($color-success-dark a(0.3));
 }
 
 .u-bg-warning {
-	background-color: var(--color-warning-light);
-	color: var(--color-warning-dark);
-	border-color: color(var(--color-warning-dark) a(0.3));
+	background-color: $color-warning-light;
+	color: $color-warning-dark;
+	border-color: color-mod($color-warning-dark a(0.3));
 }
 
 .u-bg-transparent {
@@ -150,75 +150,75 @@
 }
 
 .u-bg-frost-1 {
-	background-color: var(--color-frost-1);
+	background-color: $color-frost-1;
 }
 
 .u-bg-frost-2 {
-	background-color: var(--color-frost-2);
+	background-color: $color-frost-2;
 }
 
 .u-bg-frost-3.u-bg-frost-3 {
-	background-color: var(--color-frost-3);
+	background-color: $color-frost-3;
 }
 
 .u-bg-frost-4.u-bg-frost-4 {
-	background-color: var(--color-frost-4);
+	background-color: $color-frost-4;
 }
 
 .u-bg-tint-1 {
-	background-color: var(--color-tint-1);
+	background-color: $color-tint-1;
 }
 
 .u-bg-tint-2 {
-	background-color: var(--color-tint-2);
+	background-color: $color-tint-2;
 }
 
 .u-bg-tint-3 {
-	background-color: var(--color-tint-3);
+	background-color: $color-tint-3;
 }
 
 .u-bg-tint-4 {
-	background-color: var(--color-tint-4);
+	background-color: $color-tint-4;
 }
 
 .u-bg-mask {
-	background-color: var(--color-tint-3);
+	background-color: $color-tint-3;
 }
 
 .u-bg-1-glass {
-	background-color: color(var(--color-1) a(0.96));
+	background-color: color-mod(var(--color-1) a(0.96));
 }
 
 .u-bg-2-glass {
-	background-color: color(var(--color-2) a(0.96));
+	background-color: color-mod(var(--color-2) a(0.96));
 }
 
 .u-bg-1-glass-light {
-	background-color: color(var(--color-1-light) a(0.96));
+	background-color: color-mod(var(--color-1-light) a(0.96));
 }
 
 .u-bg-2-glass-light {
-	background-color: color(var(--color-2-light) a(0.96));
+	background-color: color-mod(var(--color-2-light) a(0.96));
 }
 
 .u-bg-1-glass-dark {
-	background-color: color(var(--color-1-dark) a(0.96));
+	background-color: color-mod(var(--color-1-dark) a(0.96));
 }
 
 .u-bg-2-glass-dark {
-	background-color: color(var(--color-2-dark) a(0.96));
+	background-color: color-mod(var(--color-2-dark) a(0.96));
 }
 
 .u-hover-white.u-hover-white:hover {
-	background-color: var(--white);
+	background-color: $white;
 }
 
 .u-hover-frost.u-hover-frost:hover {
-	background-color: var(--color-frost-2);
+	background-color: $color-frost-2;
 }
 
 .u-hover-tint:hover {
-	background-color: var(--color-tint-2);
+	background-color: $color-tint-2;
 }
 
 /* Fill Colors */

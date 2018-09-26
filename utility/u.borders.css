@@ -28,7 +28,7 @@
 }
 
 .u-br {
-	border-radius: var(--border-radius);
+	border-radius: $border-radius;
 }
 
 .u-br0 {
@@ -40,17 +40,17 @@
 }
 
 .u-br-t {
-	border-radius: var(--border-radius) var(--border-radius) 0 0;
+	border-radius: $border-radius $border-radius 0 0;
 }
 
 .u-br-r {
-	border-radius: 0 var(--border-radius) var(--border-radius) 0;
+	border-radius: 0 $border-radius $border-radius 0;
 }
 
 .u-br-b {
-	border-radius: 0 0 var(--border-radius) var(--border-radius);
+	border-radius: 0 0 $border-radius $border-radius;
 }
 
 .u-br-l {
-	border-radius: var(--border-radius) 0 0 var(--border-radius);
+	border-radius: $border-radius 0 0 $border-radius;
 }

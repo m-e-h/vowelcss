@@ -1,0 +1,31 @@
+main {
+	display: block;
+	width: 100%;
+	padding-right: 1rem;
+	padding-left: 1rem;
+	margin-right: auto;
+	margin-left: auto;
+}
+
+@media (--lg) {
+	main {
+		max-width: 90%;
+	}
+}
+
+@media (--xl) {
+	main {
+		max-width: 80%;
+	}
+}
+
+article {
+	padding: $base-space;
+	margin-bottom: $base-space;
+}
+
+aside {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+}

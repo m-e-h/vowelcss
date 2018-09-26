@@ -4,7 +4,7 @@
 .u-table-light th,
 .u-table-light td {
 	border-bottom-width: 0.063rem;
-	border-bottom-color: var(--color-grey-ui);
+	border-bottom-color: $color-grey-ui;
 }
 
 .u-table-light tr:last-child td {

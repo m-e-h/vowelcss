@@ -4,31 +4,59 @@
 ul,
 ol,
 dl {
-	list-style-type: none;
+	list-style: none;
 	margin-top: 0;
 	margin-bottom: 1rem;
 }
 
-ul:last-child,
-ol ol,
-ul ul,
-ol ul,
-ul ol {
-	margin-bottom: 0;
+article ul,
+article ol,
+article dl {
+	list-style: initial;
 }
 
-li {
-	padding: 0.2em 0;
-}
-
-/* specify the list style of nav lists */
+section ol,
+section ul,
 nav ol,
-nav ul,
-nav li {
+nav ul {
 	padding: 0;
 	margin: 0;
 }
 
-nav li a {
-	margin: 0;
+ol ol,
+ul ul,
+ol ul,
+ul ol,
+ul:last-child {
+	margin-bottom: 0;
+}
+
+dt {
+	font-weight: 700;
+}
+
+dd {
+	margin-bottom: 0.5rem;
+	margin-left: 0;
+}
+
+dfn {
+	font-style: italic;
+}
+
+/*
+ * Add the correct display in Edge and IE.
+ */
+
+details {
+	display: block;
+}
+
+summary {
+	display: list-item;
+	font-weight: bolder;
+}
+
+details[open] summary {
+	margin-bottom: 0.5em;
 }

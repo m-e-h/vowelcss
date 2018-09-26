@@ -1,0 +1,38 @@
+/* #NAV
+\*------------------------------------ */
+
+nav li {
+	flex: 1 auto;
+}
+
+nav a {
+	display: block;
+	padding: 0.5rem 1rem;
+
+	&:hover,
+	&:focus {
+		text-decoration: none;
+	}
+}
+
+nav > ul {
+	display: flex;
+	flex-wrap: wrap;
+	list-style: none;
+	justify-content: space-around;
+}
+
+aside nav > ul {
+	flex-direction: column;
+}
+
+nav li > ul {
+	box-shadow: 0 3px 3px rgba(0, 0, 0, 0.2);
+	position: absolute;
+	z-index: 99999;
+}
+
+nav li:not(:hover) > ul {
+	top: 100%;
+	left: -999em;
+}

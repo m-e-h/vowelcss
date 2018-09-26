@@ -14,10 +14,7 @@ video {
 
 img {
 	height: auto;
-}
-
-svg {
-	max-height: 100%;
+	border-style: none;
 }
 
 a > img {
@@ -25,6 +22,24 @@ a > img {
 	backface-visibility: hidden;
 }
 
-a:hover > img {
-	opacity: var(--opacity);
+svg {
+	overflow: hidden;
+	max-height: 100%;
+	fill: currentColor;
+}
+
+figure {
+	display: inline-block;
+	margin: 0 0 1rem;
+}
+
+figure img {
+	margin-bottom: 0.5rem;
+	line-height: 1;
+}
+
+figcaption {
+	display: block;
+	font-size: 90%;
+	color: #6c757d;
 }

@@ -1,350 +1,348 @@
 /* #WHITE SPACE
 \*------------------------------------ */
-@context pcSpec {
-	.u-m {
-		margin: var(--base-space);
+.u-m {
+	margin: $base-space;
+}
+
+.u-mt {
+	margin-top: $base-space;
+}
+
+.u-mb {
+	margin-bottom: $base-space;
+}
+
+.u-mr {
+	margin-right: $base-space;
+}
+
+.u-ml {
+	margin-left: $base-space;
+}
+
+.u-m05 {
+	margin: $space-05;
+}
+
+.u-mr05 {
+	margin-right: $space-05;
+}
+
+.u-m15 {
+	margin: $space-15;
+}
+
+.u-m25 {
+	margin: $space-25;
+}
+
+.u-m1 {
+	margin: $space-1;
+}
+
+.u-mt1 {
+	margin-top: $space-1;
+}
+
+.u-mr1 {
+	margin-right: $space-1;
+}
+
+.u-mb1 {
+	margin-bottom: $space-1;
+}
+
+.u-ml1 {
+	margin-left: $space-1;
+}
+
+.u-m2 {
+	margin: $space-2;
+}
+
+.u-mt2 {
+	margin-top: $space-2;
+}
+
+.u-mr2 {
+	margin-right: $space-2;
+}
+
+.u-mb2 {
+	margin-bottom: $space-2;
+}
+
+.u-ml2 {
+	margin-left: $space-2;
+}
+
+.u-m3 {
+	margin: $space-3;
+}
+
+.u-mt3 {
+	margin-top: $space-3;
+}
+
+.u-mr3 {
+	margin-right: $space-3;
+}
+
+.u-mb3 {
+	margin-bottom: $space-3;
+}
+
+.u-ml3 {
+	margin-left: $space-3;
+}
+
+.u-m4 {
+	margin: $space-4;
+}
+
+.u-mt4 {
+	margin-top: $space-4;
+}
+
+.u-mr4 {
+	margin-right: $space-4;
+}
+
+.u-mb4 {
+	margin-bottom: $space-4;
+}
+
+.u-ml4 {
+	margin-left: $space-4;
+}
+
+.u-mx1 {
+	margin-right: $space-1;
+	margin-left: $space-1;
+}
+
+.u-mx2 {
+	margin-right: $space-2;
+	margin-left: $space-2;
+}
+
+.u-mx3 {
+	margin-right: $space-3;
+	margin-left: $space-3;
+}
+
+.u-mx4 {
+	margin-right: $space-4;
+	margin-left: $space-4;
+}
+
+.u-mtn1 {
+	margin-top: -$space-1;
+}
+
+.u-mbn1 {
+	margin-bottom: -$space-1;
+}
+
+.u-mln1 {
+	margin-left: -$space-1;
+}
+
+.u-mrn1 {
+	margin-right: -$space-1;
+}
+
+.u-mxn1 {
+	margin-right: -$space-1;
+	margin-left: -$space-1;
+}
+
+.u-mtn2 {
+	margin-top: -$space-2;
+}
+
+.u-mbn2 {
+	margin-bottom: -$space-2;
+}
+
+.u-mtn3 {
+	margin-top: -$space-3;
+}
+
+.u-mbn3 {
+	margin-bottom: -$space-3;
+}
+
+.u-mtn4 {
+	margin-top: -$space-4;
+}
+
+.u-mbn4 {
+	margin-bottom: -$space-4;
+}
+
+.u-mxn2 {
+	margin-right: -$space-2;
+	margin-left: -$space-2;
+}
+
+.u-mrn3 {
+	margin-right: -$space-3;
+}
+
+.u-mrn4 {
+	margin-right: -$space-4;
+}
+
+.u-mln3 {
+	margin-left: -$space-3;
+}
+
+.u-mln4 {
+	margin-left: -$space-4;
+}
+
+.u-mxn3 {
+	margin-right: -$space-3;
+	margin-left: -$space-3;
+}
+
+.u-mxn4 {
+	margin-right: -$space-4;
+	margin-left: -$space-4;
+}
+
+.u-ml-auto {
+	margin-left: auto;
+}
+
+.u-mr-auto {
+	margin-right: auto;
+}
+
+.u-mt-auto {
+	margin-top: auto;
+}
+
+.u-mb-auto {
+	margin-bottom: auto;
+}
+
+.u-mx-auto {
+	margin-right: auto;
+	margin-left: auto;
+}
+
+.u-m0 {
+	margin: 0;
+}
+
+.u-mt0 {
+	margin-top: 0;
+}
+
+.u-mr0 {
+	margin-right: 0;
+}
+
+.u-mb0 {
+	margin-bottom: 0;
+}
+
+.u-ml0 {
+	margin-left: 0;
+}
+
+.u-mx0 {
+	margin-right: 0;
+	margin-left: 0;
+}
+
+@media (--md) {
+	.u-m2-md {
+		margin: $space-2;
 	}
 
-	.u-mt {
-		margin-top: var(--base-space);
+	.u-mt2-md {
+		margin-top: $space-2;
 	}
 
-	.u-mb {
-		margin-bottom: var(--base-space);
+	.u-mr2-md {
+		margin-right: $space-2;
 	}
 
-	.u-mr {
-		margin-right: var(--base-space);
+	.u-mb2-md {
+		margin-bottom: $space-2;
 	}
 
-	.u-ml {
-		margin-left: var(--base-space);
+	.u-ml2-md {
+		margin-left: $space-2;
 	}
 
-	.u-m05 {
-		margin: var(--space-05);
+	.u-m3-md {
+		margin: $space-3;
 	}
 
-	.u-mr05 {
-		margin-right: var(--space-05);
+	.u-mt3-md {
+		margin-top: $space-3;
 	}
 
-	.u-m15 {
-		margin: var(--space-15);
+	.u-mr3-md {
+		margin-right: $space-3;
 	}
 
-	.u-m25 {
-		margin: var(--space-25);
+	.u-mb3-md {
+		margin-bottom: $space-3;
 	}
 
-	.u-m1 {
-		margin: var(--space-1);
+	.u-ml3-md {
+		margin-left: $space-3;
 	}
 
-	.u-mt1 {
-		margin-top: var(--space-1);
+	.u-m4-md {
+		margin: $space-4;
 	}
 
-	.u-mr1 {
-		margin-right: var(--space-1);
+	.u-mt4-md {
+		margin-top: $space-4;
 	}
 
-	.u-mb1 {
-		margin-bottom: var(--space-1);
+	.u-mr4-md {
+		margin-right: $space-4;
 	}
 
-	.u-ml1 {
-		margin-left: var(--space-1);
+	.u-mb4-md {
+		margin-bottom: $space-4;
 	}
 
-	.u-m2 {
-		margin: var(--space-2);
+	.u-ml4-md {
+		margin-left: $space-4;
 	}
 
-	.u-mt2 {
-		margin-top: var(--space-2);
+	.u-mxn2-md {
+		margin-right: -$space-2;
+		margin-left: -$space-2;
 	}
 
-	.u-mr2 {
-		margin-right: var(--space-2);
+	.u-mxn3-md {
+		margin-right: -$space-3;
+		margin-left: -$space-3;
 	}
 
-	.u-mb2 {
-		margin-bottom: var(--space-2);
+	.u-mxn4-md {
+		margin-right: -$space-4;
+		margin-left: -$space-4;
 	}
 
-	.u-ml2 {
-		margin-left: var(--space-2);
-	}
-
-	.u-m3 {
-		margin: var(--space-3);
-	}
-
-	.u-mt3 {
-		margin-top: var(--space-3);
-	}
-
-	.u-mr3 {
-		margin-right: var(--space-3);
-	}
-
-	.u-mb3 {
-		margin-bottom: var(--space-3);
-	}
-
-	.u-ml3 {
-		margin-left: var(--space-3);
-	}
-
-	.u-m4 {
-		margin: var(--space-4);
-	}
-
-	.u-mt4 {
-		margin-top: var(--space-4);
-	}
-
-	.u-mr4 {
-		margin-right: var(--space-4);
-	}
-
-	.u-mb4 {
-		margin-bottom: var(--space-4);
-	}
-
-	.u-ml4 {
-		margin-left: var(--space-4);
-	}
-
-	.u-mx1 {
-		margin-right: var(--space-1);
-		margin-left: var(--space-1);
-	}
-
-	.u-mx2 {
-		margin-right: var(--space-2);
-		margin-left: var(--space-2);
-	}
-
-	.u-mx3 {
-		margin-right: var(--space-3);
-		margin-left: var(--space-3);
-	}
-
-	.u-mx4 {
-		margin-right: var(--space-4);
-		margin-left: var(--space-4);
-	}
-
-	.u-mtn1 {
-		margin-top: -var(--space-1);
-	}
-
-	.u-mbn1 {
-		margin-bottom: -var(--space-1);
-	}
-
-	.u-mln1 {
-		margin-left: -var(--space-1);
-	}
-
-	.u-mrn1 {
-		margin-right: -var(--space-1);
-	}
-
-	.u-mxn1 {
-		margin-right: -var(--space-1);
-		margin-left: -var(--space-1);
-	}
-
-	.u-mtn2 {
-		margin-top: -var(--space-2);
-	}
-
-	.u-mbn2 {
-		margin-bottom: -var(--space-2);
-	}
-
-	.u-mtn3 {
-		margin-top: -var(--space-3);
-	}
-
-	.u-mbn3 {
-		margin-bottom: -var(--space-3);
-	}
-
-	.u-mtn4 {
-		margin-top: -var(--space-4);
-	}
-
-	.u-mbn4 {
-		margin-bottom: -var(--space-4);
-	}
-
-	.u-mxn2 {
-		margin-right: -var(--space-2);
-		margin-left: -var(--space-2);
-	}
-
-	.u-mrn3 {
-		margin-right: -var(--space-3);
-	}
-
-	.u-mrn4 {
-		margin-right: -var(--space-4);
-	}
-
-	.u-mln3 {
-		margin-left: -var(--space-3);
-	}
-
-	.u-mln4 {
-		margin-left: -var(--space-4);
-	}
-
-	.u-mxn3 {
-		margin-right: -var(--space-3);
-		margin-left: -var(--space-3);
-	}
-
-	.u-mxn4 {
-		margin-right: -var(--space-4);
-		margin-left: -var(--space-4);
-	}
-
-	.u-ml-auto {
+	.u-mx-auto-md {
+		margin-right: auto;
 		margin-left: auto;
 	}
+}
 
-	.u-mr-auto {
-		margin-right: auto;
-	}
-
-	.u-mt-auto {
-		margin-top: auto;
-	}
-
-	.u-mb-auto {
-		margin-bottom: auto;
-	}
-
-	.u-mx-auto {
-		margin-right: auto;
-		margin-left: auto;
-	}
-
-	.u-m0 {
-		margin: 0;
-	}
-
-	.u-mt0 {
-		margin-top: 0;
-	}
-
-	.u-mr0 {
-		margin-right: 0;
-	}
-
-	.u-mb0 {
-		margin-bottom: 0;
-	}
-
-	.u-ml0 {
-		margin-left: 0;
-	}
-
-	.u-mx0 {
-		margin-right: 0;
-		margin-left: 0;
-	}
-
-	@media (--md) {
-		.u-m2-md {
-			margin: var(--space-2);
-		}
-
-		.u-mt2-md {
-			margin-top: var(--space-2);
-		}
-
-		.u-mr2-md {
-			margin-right: var(--space-2);
-		}
-
-		.u-mb2-md {
-			margin-bottom: var(--space-2);
-		}
-
-		.u-ml2-md {
-			margin-left: var(--space-2);
-		}
-
-		.u-m3-md {
-			margin: var(--space-3);
-		}
-
-		.u-mt3-md {
-			margin-top: var(--space-3);
-		}
-
-		.u-mr3-md {
-			margin-right: var(--space-3);
-		}
-
-		.u-mb3-md {
-			margin-bottom: var(--space-3);
-		}
-
-		.u-ml3-md {
-			margin-left: var(--space-3);
-		}
-
-		.u-m4-md {
-			margin: var(--space-4);
-		}
-
-		.u-mt4-md {
-			margin-top: var(--space-4);
-		}
-
-		.u-mr4-md {
-			margin-right: var(--space-4);
-		}
-
-		.u-mb4-md {
-			margin-bottom: var(--space-4);
-		}
-
-		.u-ml4-md {
-			margin-left: var(--space-4);
-		}
-
-		.u-mxn2-md {
-			margin-right: -var(--space-2);
-			margin-left: -var(--space-2);
-		}
-
-		.u-mxn3-md {
-			margin-right: -var(--space-3);
-			margin-left: -var(--space-3);
-		}
-
-		.u-mxn4-md {
-			margin-right: -var(--space-4);
-			margin-left: -var(--space-4);
-		}
-
-		.u-mx-auto-md {
-			margin-right: auto;
-			margin-left: auto;
-		}
-	}
-
-	@media (--lg) {
-		.u-mx4-lg {
-			margin-right: var(--space-4);
-			margin-left: var(--space-4);
-		}
+@media (--lg) {
+	.u-mx4-lg {
+		margin-right: $space-4;
+		margin-left: $space-4;
 	}
 }

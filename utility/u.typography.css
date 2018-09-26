@@ -1,164 +1,130 @@
 /* #TYPOGRAPHY UTILITY
 \*------------------------------------ */
 
-@context pcSpec {
-	.u-f1 {
-		font-size: 1rem;
-	}
+.u-f1 {
+	font-size: 1rem;
+}
 
-	.u-h0 {
-		font-size: var(--h0-mobile);
+.h0 {
+	--fluid-font: calc(
+		var(--min-font-size) + (3.5 - 2.5) * (100vw - 21rem) / (92 - 21)
+	);
+	--min-font-size: $h1;
+	--max-font-size: $h0;
+}
 
-		@media (--sm) {
-			font-size: var(--h0-fluid);
-		}
+.u-h1 {
+	--fluid-font: calc(
+		var(--min-font-size) + (2.5 - 2) * (100vw - 21rem) / (92 - 21)
+	);
+	--min-font-size: $h2;
+	--max-font-size: $h1;
+}
 
-		@media (--xl) {
-			font-size: var(--h0);
-		}
-	}
+.u-h4 {
+	font-size: var(--h4);
+}
 
-	.u-h1 {
-		font-size: var(--h1-mobile);
+.u-f-plus,
+.u-h5 {
+	font-size: var(--h5);
+}
 
-		@media (--sm) {
-			font-size: var(--h1-fluid);
-		}
+.u-f-minus,
+.u-h6 {
+	font-size: var(--h6);
+}
 
-		@media (--xl) {
-			font-size: var(--h1);
-		}
-	}
+.u-lh-1 {
+	line-height: 1;
+}
 
-	.u-h2 {
-		font-size: var(--h2-mobile);
+.u-lh-2 {
+	line-height: 2;
+}
 
-		@media (--sm) {
-			font-size: var(--h2-fluid);
-		}
+.u-light {
+	font-weight: $font-light;
+}
 
-		@media (--xl) {
-			font-size: var(--h2);
-		}
-	}
+.u-bold {
+	font-weight: $font-bold;
+}
 
-	.u-h3 {
-		font-size: var(--h3-mobile);
+.u-text-read {
+	font-family: $root-font-family;
+}
 
-		@media (--sm) {
-			font-size: var(--h3-fluid);
-		}
+.u-regular,
+.u-normal {
+	font-weight: $font-normal;
+}
 
-		@media (--xl) {
-			font-size: var(--h3);
-		}
-	}
+.u-italic {
+	font-style: italic;
+}
 
-	.u-h4 {
-		font-size: var(--h4);
-	}
+.u-caps {
+	text-transform: uppercase;
+	letter-spacing: 0.2em;
+}
 
-	.u-f-plus,
-	.u-h5 {
-		font-size: var(--h5);
-	}
+.u-text-shadow {
+	text-shadow: 0.063rem 0.063rem 0.313rem $color-tint-3;
+}
 
-	.u-f-minus,
-	.u-h6 {
-		font-size: var(--h6);
-	}
+.u-text-left {
+	text-align: left;
+}
 
-	.u-lh-1 {
-		line-height: 1;
-	}
+.u-text-center {
+	text-align: center;
+}
 
-	.u-lh-2 {
-		line-height: 2;
-	}
+.u-text-right {
+	text-align: right;
+}
 
-	.u-light {
-		font-weight: var(--font-light);
-	}
+.u-text-justify {
+	text-align: justify;
+}
 
-	.u-bold {
-		font-weight: var(--font-bold);
-	}
+.u-nowrap {
+	white-space: nowrap;
+}
 
-	.u-text-read {
-		font-family: var(--root-font-family);
-	}
+.u-break-word {
+	word-wrap: break-word;
+}
 
-	.u-regular,
-	.u-normal {
-		font-weight: var(--font-normal);
-	}
+.u-truncate {
+	max-width: 100%;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+}
 
-	.u-italic {
-		font-style: italic;
-	}
+.u-lead,
+.intro-paragraph {
+	font-weight: 300;
+	font-size: var(--h5);
+}
 
-	.u-caps {
-		text-transform: uppercase;
-		letter-spacing: 0.2em;
-	}
+.u-dropcap::first-letter {
+	font-family: Baskerville, "Goudy Old Style", Palatino, "Book Antiqua", serif;
+	float: left;
+	margin-right: 0.15em;
+	background: transparent;
+	color: inherit;
+	font-size: 3.5rem;
+	line-height: 0.9;
 
-	.u-text-shadow {
-		text-shadow: 0.063rem 0.063rem 0.313rem var(--color-tint-3);
-	}
-
-	.u-text-left {
-		text-align: left;
-	}
-
-	.u-text-center {
-		text-align: center;
-	}
-
-	.u-text-right {
-		text-align: right;
-	}
-
-	.u-text-justify {
-		text-align: justify;
-	}
-
-	.u-nowrap {
-		white-space: nowrap;
-	}
-
-	.u-break-word {
-		word-wrap: break-word;
-	}
-
-	.u-truncate {
-		max-width: 100%;
-		overflow: hidden;
-		text-overflow: ellipsis;
-		white-space: nowrap;
-	}
-
-	.u-lead,
-	.intro-paragraph {
-		font-weight: 300;
-		font-size: var(--h5);
-	}
-
-	.u-dropcap::first-letter {
-		font-family: Baskerville, 'Goudy Old Style', Palatino, 'Book Antiqua', serif;
-		float: left;
-		margin-right: 0.15em;
-		background: transparent;
-		color: inherit;
-		font-size: 3.5rem;
-		line-height: 0.9;
-
-		@media (--md) {
-			font-size: var(--h0);
-		}
+	@media (--md) {
+		font-size: var(--h0);
 	}
 }
 
 .u-text-display,
 .u-dropcap::first-letter {
-	font-family: var(--display-font-family);
+	font-family: $display-font-family;
 }

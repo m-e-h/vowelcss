@@ -3,116 +3,139 @@
 -------------------------------------------------------------- */
 
 form {
-	margin-bottom: var(--base-space);
+	margin-bottom: $base-space;
 }
 
-input:not([type="button"]):not([type="reset"]):not([type="submit"]),
+/**
+ * 1. Remove the margin in Firefox and Safari.
+ * 2. Remove the default vertical scrollbar in IE.
+ * 3. Change the resize direction on textareas in all browsers (opinionated).
+ */
+textarea {
+	margin: 0; /* 1 */
+	overflow: auto; /* 2 */
+	resize: vertical; /* 3 */
+	display: block;
+	width: 100%;
+}
+
+/**
+ * Show the overflow in Edge and IE.
+ */
+
+input,
+button {
+	overflow: visible;
+}
+
+/**
+ * 1. Remove the margin in Safari.
+ * 2. Remove the inheritance of text transform in Firefox.
+ */
+input,
+button,
+select,
+optgroup,
+textarea {
+	margin: 0; /* 1 */
+	font-family: inherit;
+	font-size: inherit;
+	line-height: inherit;
+	text-transform: none; /* 2 */
+}
+
+input,
 select,
 textarea {
 	max-width: 100%;
-	border-radius: var(--border-radius);
+	min-height: $form-element-min-height;
+	border-radius: $border-radius;
+	border-width: 1px;
+	border-color: color-mod(red a(90%));
 	padding: 0.5em 0.625em;
-	border-width: 0;
 	line-height: 1.5;
-	background-color: var(--form-element-background-color);
-	color: var(--color-text);
+	background-color: $form-element-background-color;
+	color: $color-text;
 	vertical-align: baseline;
-	font-size: inherit;
-	font-family: inherit;
-	font-style: inherit;
 	font-weight: inherit;
-	box-shadow: inset 0 0 0 0.063rem var(--form-element-background-color);
-	transition-duration: var(--transition-time);
-	transition-timing-function: var(--animation-curve);
-	transition-property: color, background-color, box-shadow;
 
 	&:focus {
-		outline: 0;
-		background-color: color(#fff a(95%));
-		transition-duration: var(--transition-time-out);
-		transition-timing-function: var(--animation-curve-out);
-		box-shadow: inset 0 0 0 0.063rem var(--color-links-hover) !important;
+		background-color: color-mod(#fff alpha(95%));
+		border-color: color-mod(black alpha(70%));
 	}
 }
 
-button,
-[type="button"],
-[type="date"],
-[type="datetime"],
-[type="datetime-local"],
-[type="email"],
-[type="month"],
-[type="number"],
-[type="password"],
-[type="reset"],
-[type="search"],
-[type="submit"],
-[type="tel"],
-[type="text"],
-[type="time"],
-[type="url"],
-[type="week"],
-select,
-textarea {
-	min-height: var(--form-element-min-height);
+input[aria-invalid="true"],
+select[aria-invalid="true"],
+textarea[aria-invalid="true"] {
+	box-shadow: inset 0 0 0 0.063rem $red5 !important;
 }
 
-input[aria-invalid=true],
-select[aria-invalid=true],
-textarea[aria-invalid=true] {
-	box-shadow: inset 0 0 0 0.063rem var(--red5) !important;
+input[type="date"],
+input[type="time"],
+input[type="datetime-local"],
+input[type="month"] {
+	-webkit-appearance: listbox;
+}
+
+fieldset {
+	min-width: 0;
+	padding: 0.35em 0.75em 0.625em;
+	margin: 0;
+	border: 0;
 }
 
 legend {
-	font-size: 1.25rem;
-	font-weight: 700;
-}
-
-textarea {
 	display: block;
 	width: 100%;
-	resize: vertical;
+	max-width: 100%;
+	padding: 0;
+	margin-bottom: 0.5rem;
+	line-height: inherit;
+	color: inherit;
+	white-space: normal;
 }
 
 label {
 	font-size: 0.875rem;
-	font-weight: 700;
 	display: block;
 	margin: 0.15rem;
 }
 
-input[type=checkbox],
-input[type=radio] {
+input[type="checkbox"],
+input[type="radio"] {
+	box-sizing: border-box;
+	padding: 0;
 	display: inline-block;
 	vertical-align: middle;
-	margin: 0 var(--space-1) 0 0;
+	margin: 0 $space-1 0 0;
+	width: 1rem;
+	height: 1rem;
 }
 
 input[type="number"] {
 	width: auto; /* Firefox 36+ */
 }
 
-select {
-	background-image: url("data:image/svg+xml, %3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23495057' viewBox='0 0 24 24'%3E%3Cpath d='M3.5 7.5l9 9 9-9z'/%3E%3C/svg%3E");
-	background-repeat: no-repeat;
+progress {
 	display: inline-block;
-	background-size: 1em;
-	background-position: calc(100% - 0.625em), center;
-	padding-right: 2rem !important;
-	-moz-appearance: none; /* Firefox 40+ */
-	-webkit-appearance: none; /* Chrome 45+ */
-
-	&::-ms-expand {
-		display: none; /* Edge 12+, Internet Explorer 11- */
-	}
-
-	&::-ms-value {
-		color: currentColor; /* Edge 12+, Internet Explorer 11- */
-	}
+	vertical-align: baseline;
 }
 
-input[type=search] {
-	background-image: url("data:image/svg+xml, %3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23495057' viewBox='0 0 24 24'%3E%3Cpath d='M21 19l-5.154-5.154C16.574 12.742 17 11.42 17 10c0-3.866-3.134-7-7-7s-7 3.134-7 7 3.134 7 7 7c1.42 0 2.742-.426 3.846-1.154L19 21l2-2zM5 10c0-2.757 2.243-5 5-5s5 2.243 5 5-2.243 5-5 5-5-2.243-5-5z'/%3E%3C/svg%3E");
+[type="number"]::-webkit-inner-spin-button,
+[type="number"]::-webkit-outer-spin-button {
+	height: auto;
+}
+
+[type="search"]::-webkit-search-cancel-button,
+[type="search"]::-webkit-search-decoration {
+	-webkit-appearance: none;
+}
+
+input[type="search"] {
+	outline-offset: -2px;
+	-webkit-appearance: none;
+	background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23495057' viewBox='0 0 24 24'%3E%3Cpath d='M21 19l-5.154-5.154C16.574 12.742 17 11.42 17 10c0-3.866-3.134-7-7-7s-7 3.134-7 7 3.134 7 7 7c1.42 0 2.742-.426 3.846-1.154L19 21l2-2zM5 10c0-2.757 2.243-5 5-5s5 2.243 5 5-2.243 5-5 5-5-2.243-5-5z'/%3E%3C/svg%3E");
 	background-repeat: no-repeat;
 	display: inline-block;
 	background-size: 1.5rem;
@@ -132,32 +155,69 @@ input[type=search] {
 	width: 1px;
 }
 
-input[value=Other]:not(:focus) {
-	color: var(--color-grey-ui);
+output {
+	display: inline-block;
 }
 
-[class*="u-bg-"]:not(.u-bg-white) {
-	input:not([type="button"]):not([type="reset"]):not([type="submit"]),
-	select,
-	textarea {
-		background-color: var(--color-frost-4);
+/*
+  * Add the correct styles in Edge, IE, and Safari.
+  */
 
-		&:focus {
-			background-color: color(#fff a(95%));
-		}
-	}
+dialog {
+	background-color: white;
+	border: solid;
+	color: black;
+	display: block;
+	height: -moz-fit-content;
+	height: -webkit-fit-content;
+	height: fit-content;
+	left: 0;
+	margin: auto;
+	padding: 1em;
+	position: absolute;
+	right: 0;
+	width: -moz-fit-content;
+	width: -webkit-fit-content;
+	width: fit-content;
 }
 
-input:disabled,
-input[readonly],
-select:disabled,
-textarea:disabled,
-textarea[readonly],
-input[readonly]:focus,
-textarea[readonly]:focus {
+dialog:not([open]) {
+	display: none;
+}
+
+[hidden] {
+	display: none;
+}
+
+/**
+  * Change the cursor on busy elements in all browsers (opinionated).
+  */
+
+[aria-busy="true"] {
+	cursor: progress;
+}
+
+/*
+   * Change the cursor on control elements in all browsers (opinionated).
+   */
+
+[aria-controls] {
+	cursor: pointer;
+}
+
+/*
+  * Change the cursor on disabled, not-editable, or otherwise
+  * inoperable elements in all browsers (opinionated).
+  */
+
+:disabled,
+[readonly],
+[aria-disabled="true"],
+[disabled],
+[readonly]:focus {
+	cursor: not-allowed;
 	pointer-events: none;
 	border-color: transparent !important;
-	background-color: var(--form-element-background-color) !important;
-	cursor: default;
+	background-color: $form-element-background-color !important;
 	opacity: 0.5;
 }
