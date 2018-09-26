@@ -51,17 +51,18 @@ textarea {
 	min-height: $form-element-min-height;
 	border-radius: $border-radius;
 	border-width: 1px;
-	border-color: color-mod(red a(90%));
+	border-color: $gray3;
 	padding: 0.5em 0.625em;
+	font-size: 1rem;
 	line-height: 1.5;
 	background-color: $form-element-background-color;
-	color: $color-text;
+	color: $color-text-light;
 	vertical-align: baseline;
 	font-weight: inherit;
 
 	&:focus {
-		background-color: color-mod(#fff alpha(95%));
-		border-color: color-mod(black alpha(70%));
+		background-color: #fff;
+		border-color: var(--color-1);
 	}
 }
 

@@ -3,6 +3,7 @@
 
 nav li {
 	flex: 1 auto;
+	position: relative;
 }
 
 nav a {
@@ -20,6 +21,7 @@ nav > ul {
 	flex-wrap: wrap;
 	list-style: none;
 	justify-content: space-around;
+	text-align: center;
 }
 
 aside nav > ul {
@@ -30,9 +32,12 @@ nav li > ul {
 	box-shadow: 0 3px 3px rgba(0, 0, 0, 0.2);
 	position: absolute;
 	z-index: 99999;
+	width: 100%;
 }
 
 nav li:not(:hover) > ul {
 	top: 100%;
 	left: -999em;
+	max-height: 0;
+	overflow: hidden;
 }

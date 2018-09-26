@@ -20,8 +20,4 @@ a {
 a[class] {
 	color: inherit;
 	text-decoration: none;
-
-	&:hover {
-		opacity: 0.5;
-	}
 }

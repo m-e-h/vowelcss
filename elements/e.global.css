@@ -8,6 +8,8 @@
 *,
 ::before,
 ::after {
+	border-style: solid;
+	border-width: 0;
 	background-repeat: no-repeat; /* 1 */
 	box-sizing: border-box; /* 2 */
 }
