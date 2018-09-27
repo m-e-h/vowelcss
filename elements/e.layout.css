@@ -1,8 +1,16 @@
+body > header {
+	background-color: #fff;
+	padding: 0 $base-space;
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+	align-items: center;
+}
+
 main {
 	display: block;
 	width: 100%;
-	padding-right: 1rem;
-	padding-left: 1rem;
+	padding: 1rem 0;
 	margin-right: auto;
 	margin-left: auto;
 }
@@ -20,8 +28,8 @@ main {
 }
 
 article {
-	padding: $base-space;
-	margin-bottom: $base-space;
+	padding: $base-space $space-1;
+	margin-bottom: $space-2;
 }
 
 aside {

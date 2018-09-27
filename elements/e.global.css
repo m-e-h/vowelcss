@@ -35,7 +35,7 @@
 html {
 	cursor: default; /* 1 */
 	font-family: system-ui; /* 2 */
-	line-height: 1.15; /* 3 */
+	line-height: 1.16; /* 3 */
 	-ms-text-size-adjust: 100%; /* 4 */
 	-webkit-text-size-adjust: 100%; /* 4 */
 	overflow-wrap: break-word; /* 5 */

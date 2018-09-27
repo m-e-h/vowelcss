@@ -80,32 +80,7 @@
 	display: none;
 }
 
-@media (--xs) {
-	.hidden-xs {
-		display: none;
-	}
-}
-
-@media (--sm) {
-	.hidden-sm {
-		display: none;
-	}
-}
-
-@media (--md) {
-	.hidden-md {
-		display: none;
-	}
-}
-
-@media (--lg) {
-	.hidden-lg {
-		display: none;
-	}
-}
-
-.screen-reader-text,
-.visuallyhidden {
+.screen-reader-text {
 	border: 0;
 	clip: rect(0 0 0 0);
 	height: 1px;
@@ -117,15 +92,15 @@
 	white-space: nowrap;
 }
 
-.visuallyhidden.focusable:active,
-.visuallyhidden.focusable:focus {
+.screen-reader-text:active,
+.screen-reader-text:focus {
 	clip: auto;
 	height: auto;
 	margin: 0;
 	overflow: visible;
-	position: static;
 	width: auto;
 	white-space: inherit;
+	z-index: 9999;
 }
 
 .clear::before,
@@ -142,4 +117,12 @@
 	pointer-events: none;
 	cursor: default;
 	opacity: 0.5;
+}
+
+img.wp-smiley,
+img.emoji {
+	display: inline;
+	max-width: 1.1em;
+	margin: 0 0.07em;
+	vertical-align: -0.1em;
 }

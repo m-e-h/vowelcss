@@ -1,9 +1,9 @@
 /* Custom media queries */
-@custom-media --xs (max-width: 20rem);
-@custom-media --sm (min-width: 21rem);
-@custom-media --md (min-width: 40rem);
-@custom-media --lg (min-width: 64rem);
-@custom-media --xl (min-width: 90rem);
+@custom-media --xs (max-width: 20em);
+@custom-media --sm (min-width: 21em);
+@custom-media --md (min-width: 40em);
+@custom-media --lg (min-width: 64em);
+@custom-media --xl (min-width: 90em);
 
 $h0: 3.5rem;
 $h1: 2.5rem;
@@ -57,25 +57,6 @@ $h6: 0.9rem;
 	--transition-time-out: 0.2s;
 	--animation-curve: cubic-bezier(0.4, 0, 1, 1);
 	--animation-curve-out: cubic-bezier(0, 0, 0.2, 1);
-}
-
-h1,
-h2,
-.u-h2 {
-	--fluid-font: calc(
-		var(--min-font-size) + (2.5 - 1.75) * (100vw - 21rem) / (92 - 21)
-	);
-	--min-font-size: $h3;
-	--max-font-size: $h2;
-}
-
-h3,
-.u-h3 {
-	--fluid-font: calc(
-		var(--min-font-size) + (2 - 1.5) * (100vw - 21rem) / (92 - 21)
-	);
-	--min-font-size: $h4;
-	--max-font-size: $h3;
 }
 
 $white: #fff;

@@ -14,11 +14,18 @@
 }
 
 .u-h1 {
-	--fluid-font: calc(
-		var(--min-font-size) + (2.5 - 2) * (100vw - 21rem) / (92 - 21)
-	);
-	--min-font-size: $h2;
-	--max-font-size: $h1;
+	font-size: var(--h1);
+	line-height: 1.16;
+}
+
+.u-h2 {
+	font-size: var(--h2);
+	line-height: 1.16;
+}
+
+.u-h3 {
+	font-size: var(--h3);
+	line-height: 1.16;
 }
 
 .u-h4 {

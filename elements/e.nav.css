@@ -16,7 +16,7 @@ nav a {
 	}
 }
 
-nav > ul {
+header nav > ul {
 	display: flex;
 	flex-wrap: wrap;
 	list-style: none;
@@ -24,11 +24,8 @@ nav > ul {
 	text-align: center;
 }
 
-aside nav > ul {
-	flex-direction: column;
-}
-
 nav li > ul {
+	background-color: #fff;
 	box-shadow: 0 3px 3px rgba(0, 0, 0, 0.2);
 	position: absolute;
 	z-index: 99999;
@@ -40,4 +37,32 @@ nav li:not(:hover) > ul {
 	left: -999em;
 	max-height: 0;
 	overflow: hidden;
+}
+
+:root a[href="#main"] {
+	border: 0;
+	background-color: $color-frost-4;
+	clip: rect(0 0 0 0);
+	height: 1px;
+	margin: -1px;
+	overflow: hidden;
+	padding: 0;
+	position: absolute;
+	width: 1px;
+	white-space: nowrap;
+
+	&:active,
+	&:focus {
+		top: 0.5rem;
+		left: 0.5rem;
+		clip: auto;
+		height: auto;
+		margin: 0;
+		padding: 0.5rem;
+		box-shadow: $shadow-3;
+		overflow: visible;
+		width: auto;
+		white-space: inherit;
+		z-index: 100000;
+	}
 }
