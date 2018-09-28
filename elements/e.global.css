@@ -45,11 +45,11 @@ html {
 body {
 	margin: 0;
 	overflow-x: hidden;
-	font-family: $root-font-family;
+	font-family: var(--root-font-family);
 	font-size: 1rem;
 	font-weight: 400;
 	line-height: 1.5;
-	color: $root-color;
+	color: var(--root-color);
 	text-align: left;
 	background-color: #fff;
 }
