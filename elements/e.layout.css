@@ -1,3 +1,10 @@
+body {
+	min-height: 100vh;
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction: column;
+}
+
 body > header {
 	background-color: #fff;
 	padding: 0 $base-space;
@@ -5,9 +12,11 @@ body > header {
 	justify-content: space-between;
 	flex-wrap: wrap;
 	align-items: center;
+	margin-bottom: $base-space;
 }
 
 main {
+	text-align: center;
 	display: block;
 	width: 100%;
 	padding: 1rem 0;
@@ -28,12 +37,20 @@ main {
 }
 
 article {
+	text-align: left;
 	padding: $base-space $space-1;
 	margin-bottom: $space-2;
 }
 
-aside {
+body > aside {
 	display: flex;
+	flex-direction: column;
 	flex-wrap: wrap;
 	justify-content: space-around;
+	margin-top: auto;
+}
+
+body > aside:last-of-type {
+	flex-direction: row;
+	margin-top: auto;
 }

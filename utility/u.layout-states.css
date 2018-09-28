@@ -1,6 +1,10 @@
 /* #UTILITY LAYOUT
 \*------------------------------------ */
 
+body.admin-bar {
+	min-height: calc(100vh - 32px);
+}
+
 .u-content-wrap > * {
 	max-width: var(--container);
 	margin-left: auto;
