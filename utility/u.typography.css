@@ -5,12 +5,9 @@
 	font-size: 1rem;
 }
 
-.h0 {
-	--fluid-font: calc(
-		var(--min-font-size) + (3.5 - 2.5) * (100vw - 21rem) / (92 - 21)
-	);
-	--min-font-size: $h1;
-	--max-font-size: $h0;
+.u-h0 {
+	font-size: var(--h0);
+	line-height: 1.16;
 }
 
 .u-h1 {
@@ -30,6 +27,7 @@
 
 .u-h4 {
 	font-size: var(--h4);
+	line-height: 1.16;
 }
 
 .u-f-plus,
