@@ -13,52 +13,6 @@ $h4: 1.5rem;
 $h5: 1.25rem;
 $h6: 0.9rem;
 
-/* global vars */
-:root {
-	/* Fluid font = calc(minPX + (max - min) * ((100vw - sm-mqPX) / (xlMQ - sm-mq))) */
-	--fluid-font: calc(
-		var(--min-font-size) + (1.125 - 0.95) * ((100vw - 21rem) / (90 - 21))
-	);
-	--min-font-size: 0.95rem;
-	--max-font-size: 1.125rem;
-
-	--opacity: 0.7;
-	--root-color: var(--color-text);
-	--root-font-family: system-ui;
-	--paragraph-width: 64rem;
-	--container: 70rem;
-	--container-wide: 80rem;
-	--h0: 3.5rem;
-	--h1: 2.5rem;
-	--h2: 2rem;
-	--h3: 1.75rem;
-	--h4: 1.5rem;
-	--h5: 1.25rem;
-	--h6: 0.9rem;
-	--space-05: 0.5rem;
-	--space-1: 1rem;
-	--space-15: 1.5rem;
-	--space-2: 2rem;
-	--space-25: 2.5rem;
-	--space-3: 3rem;
-	--space-4: 4rem;
-	--space-5: 5rem;
-	--gutter: var(--base-space);
-	--gutter-half: 0.75rem;
-	--gutter-mobile: var(--space-1);
-	--base-space: var(--space-15);
-	--color-1: $blue5;
-	--color-1-light: $blue3;
-	--color-1-dark: $blue7;
-	--color-2: $teal5;
-	--color-2-light: $teal3;
-	--color-2-dark: $teal7;
-	--transition-time: 0.16s;
-	--transition-time-out: 0.2s;
-	--animation-curve: cubic-bezier(0.4, 0, 1, 1);
-	--animation-curve-out: cubic-bezier(0, 0, 0.2, 1);
-}
-
 $white: #fff;
 $silver: $gray0;
 $grey: $gray3;
@@ -82,7 +36,6 @@ $color-2-light: $teal3;
 $color-2-dark: $teal7;
 $color-links: $indigo7;
 $color-links-hover: $indigo5;
-$color-text: #212629;
 $color-text-light: $gray7;
 $color-text-dark: #121516;
 $color-grey-bg: $gray1;
@@ -122,7 +75,7 @@ $shadow-5: 0 9px 12px -6px rgba(0, 0, 0, 0.2),
 	0 19px 29px 2px rgba(0, 0, 0, 0.14), 0 7px 36px 6px rgba(0, 0, 0, 0.12);
 
 /* global vars */
-$root-color: #212629;
+$root-color: #24292e;
 $root-font-family: system-ui;
 $display-font-family: "Liberation Serif", "Times", "Times New Roman", serif;
 $form-element-background-color: $color-frost-4;
