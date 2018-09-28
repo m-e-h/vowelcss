@@ -26,28 +26,32 @@ article p:last-of-type {
 	margin-bottom: 0;
 }
 
+article p:last-of-type + * {
+	margin-top: 1rem;
+}
+
 h1 {
-	font-size: $h2;
+	font-size: var(--h2);
 }
 
 h2 {
-	font-size: $h2;
+	font-size: var(--h2);
 }
 
 h3 {
-	font-size: $h3;
+	font-size: var(--h3);
 }
 
 h4 {
-	font-size: $h4;
+	font-size: var(--h4);
 }
 
 h5 {
-	font-size: $h5;
+	font-size: var(--h5);
 }
 
 h6 {
-	font-size: $h5;
+	font-size: var(--h5);
 }
 
 h1,
@@ -72,7 +76,7 @@ article h3,
 article h4,
 article h5,
 article h6 {
-	margin: 0.7em 0 0.5em;
+	margin: 1em 0 0.5em;
 }
 
 /* h1[class],

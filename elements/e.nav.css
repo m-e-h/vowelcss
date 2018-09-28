@@ -12,7 +12,7 @@ nav a {
 
 	&:hover,
 	&:focus {
-		text-decoration: none;
+		@extend button:hover;
 	}
 }
 

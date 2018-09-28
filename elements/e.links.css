@@ -8,30 +8,26 @@ a {
 	color: inherit;
 	text-decoration: none;
 	background-color: transparent; /* 1 */
-	overflow-wrap: break-word;
 	transition-duration: $transition-time;
 	transition-timing-function: $animation-base;
-	transition-property: color, background-color, opacity;
+	transition-property: color, box-shadow, opacity;
 
 	&:hover,
 	&:focus {
-		background-color: $color-shade-2;
+		box-shadow: inset 0 -0.1875rem 0 $color-shade-4;
 		transition-duration: $transition-time-out;
 		transition-timing-function: $animation-curve-out;
 	}
 }
 
-aside a,
-main a {
-	color: $color-links;
-	background-image: linear-gradient(180deg, $color-shade-3 50%, transparent 0);
-	background-repeat: repeat-x;
-	background-size: 0.125rem 0.3rem;
-	background-position: 0 110%;
+p > a,
+article a {
+	box-shadow: inset 0 -0.125rem 0 $color-shade-3;
+	overflow-wrap: break-word;
 
 	&:hover,
 	&:focus {
-		color: $color-links-hover;
+		box-shadow: inset 0 -0.1875rem 0 $color-shade-4;
 	}
 }
 
