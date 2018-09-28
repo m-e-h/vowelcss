@@ -1,7 +1,10 @@
 # vowel.css
 Yet another CSS library. There are many like it, but this one is mine.
 
-**vowel.css** is a set of functional styles that I've been using with my own projects for quite some time.
+**vowel.css** is a set of base element styles and functional styles that I've been using with my own projects for quite some time.
+
+The `elements/` styles are a mix of ideas from [sanitize.css](https://github.com/csstools/sanitize.css), [Bootstrap Reboot](https://github.com/twbs/bootstrap/blob/v4-dev/dist/css/bootstrap-reboot.css) and my own. 
+Element styles should provide a solid base style with low specificity.
 
 The functional classes basically evolved from [Basscss](https://github.com/basscss/basscss) with utility classes and more OOCSS style components added as needed.
 
@@ -14,23 +17,17 @@ The structure and naming conventions are influenced by Harry Robert's Inverted T
 
 > The order is `!important` to prevent unexpected over-rides.
 
-Oh, and the **i**ndex.css completes the "vowel" theme.
+And the **i**ndex.css completes the "vowel" theme.
 
 ## Usage
-Currently using **postcss** to compile the separate stylesheets.
+Currently using **postcss** to compile the stylesheets.
 
-These are the postcss plugins that may or may not currently be required. *I plan to trim this down in the very near future.*
+These are the postcss plugins that may or may not currently be required. *This changes over time.*
 ```
-"postcss-color-function": "^2.0.1",
-"postcss-custom-media": "^5.0.1",
-"postcss-custom-properties": "^5.0.1",
-"postcss-import": "^9.0.0",
-"postcss-increase-specificity": "^0.3.0",
-"postcss-inline-svg": "^2.3.0",
-"postcss-mixins": "^5.4.1",
-"postcss-nested": "^1.0.0",
-"postcss-plugin-context": "^2.0.0",
-"postcss-remove-root": "^0.0.2",
-"postcss-simple-vars": "^3.0.0",
-"postcss-strip-units": "^1.2.0",
+    "postcss-discard-comments"
+    "postcss-discard-empty"
+    "postcss-extend-rule"
+    "postcss-import"
+    "postcss-preset-env"
+    "postcss-simple-vars"
 ```
