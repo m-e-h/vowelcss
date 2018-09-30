@@ -1,26 +1,22 @@
+@media (--md) {
+	.alignleft {
+		float: left;
+		margin: 0 0 1.5rem 1.5rem;
+		max-width: 50%;
+	}
 
-.alignleft {
-	@media( min-width: content-width() / 2 ) {
-		float:     left;
-		margin:    0 0 1.5rem 1.5rem;
+	.alignright {
+		float: left;
+		margin: 0 1.5rem 1.5rem 0;
 		max-width: 50%;
 	}
 }
-
-.alignright {
-	@media( min-width: content-width() / 2 ) {
-		float:     left;
-		margin:    0 1.5rem 1.5rem 0;
-		max-width: 50%;
-	}
-}
-
 .aligncenter {
-	display:      block;
-	margin-left:  auto;
+	display: block;
+	margin-left: auto;
 	margin-right: auto;
-	text-align:   center;
-	clear:        both;
+	text-align: center;
+	clear: both;
 }
 
 .alignwide.alignwide {
