@@ -53,3 +53,14 @@ body {
 	text-align: left;
 	background-color: #fff;
 }
+
+article,
+aside,
+footer,
+header,
+main,
+nav,
+section {
+	text-align: initial;
+	display: block;
+}

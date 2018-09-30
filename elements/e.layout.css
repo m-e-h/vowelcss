@@ -19,26 +19,11 @@ main {
 	text-align: center;
 	display: block;
 	width: 100%;
-	padding: 1rem 0;
 	margin-right: auto;
 	margin-left: auto;
 }
 
-@media (--lg) {
-	main {
-		max-width: 90%;
-	}
-}
-
-@media (--xl) {
-	main {
-		max-width: 80%;
-	}
-}
-
 article {
-	text-align: left;
-	padding: $base-space $space-1;
 	margin-bottom: $space-2;
 }
 

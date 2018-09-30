@@ -28,18 +28,9 @@ svg {
 	fill: currentColor;
 }
 
-figure {
-	display: inline-block;
-	margin: 0 0 1rem;
-}
-
-figure img {
-	margin-bottom: 0.5rem;
-	line-height: 1;
-}
-
 figcaption {
+	margin-top: 0.5rem;
 	display: block;
-	font-size: 90%;
-	color: #6c757d;
+	font-size: $h6;
+	color: $color-text-light;
 }

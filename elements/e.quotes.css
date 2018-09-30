@@ -4,12 +4,10 @@
 blockquote {
 	padding: $space-1;
 	font-size: $h5;
-	text-align: center;
-	margin: 0 0 1rem;
+	border-left: 4px solid var(--color-1);
 }
 
 cite {
-	text-align: right;
 	width: 100%;
 	display: inline-block;
 	font-family: $root-font-family;

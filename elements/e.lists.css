@@ -15,6 +15,11 @@ article dl {
 	list-style: initial;
 }
 
+article li {
+	margin-left: 1rem;
+	margin-bottom: 0.25em;
+}
+
 section ol,
 section ul,
 nav ol,
