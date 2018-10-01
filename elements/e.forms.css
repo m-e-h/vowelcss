@@ -4,6 +4,7 @@
 
 form {
 	margin-bottom: $base-space;
+	max-width: var(--content-width);
 }
 
 /**

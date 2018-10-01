@@ -12,7 +12,11 @@ td,
 th {
 	vertical-align: middle;
 	padding: 0.5rem;
-	border-top: 1px solid $color-grey-ui-light;
+	border-top: 1px solid $color-shade-2;
+}
+
+tr:nth-child(2n) {
+    background-color: $color-shade-2;
 }
 
 thead th {
@@ -24,12 +28,12 @@ thead th {
 thead {
 	font-weight: $font-bold;
 	vertical-align: bottom;
-	border-bottom: 2px solid $color-grey-ui;
+	border-bottom: 2px solid $color-shade-2;
 }
 
 tfoot {
 	font-weight: $font-bold;
-	border-top: 2px solid $color-grey-ui;
+	border-top: 2px solid $color-shade-2;
 }
 
 caption {

@@ -4,7 +4,7 @@
 }
 
 .u-max-width {
-	max-width: var(--container-wide);
+	max-width: var(--content-wide);
 }
 
 .u-text-wrap {
@@ -15,20 +15,20 @@
 
 .u-container {
 	width: 100%;
-	max-width: var(--container);
+	max-width: var(--content-width);
 	margin-left: auto;
 	margin-right: auto;
 }
 
 .u-container-wide {
 	width: 100%;
-	max-width: var(--container-wide);
+	max-width: var(--content-wide);
 	margin-left: auto;
 	margin-right: auto;
 }
 
 .u-max-center {
-	max-width: var(--container-wide);
+	max-width: var(--content-wide);
 	margin-left: auto;
 	margin-right: auto;
 }

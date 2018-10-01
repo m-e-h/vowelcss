@@ -1,9 +1,3 @@
-/* Custom media queries */
-@custom-media --xs (max-width: 20em);
-@custom-media --sm (min-width: 21em);
-@custom-media --md (min-width: 40em);
-@custom-media --lg (min-width: 64em);
-@custom-media --xl (min-width: 90em);
 
 $h0: 3.5rem;
 $h1: 2.5rem;

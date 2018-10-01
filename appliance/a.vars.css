@@ -1,18 +1,24 @@
+/* Custom media queries */
+@custom-media --xs (width <= 20em);
+@custom-media --sm (width >= 21em);
+@custom-media --md (width >= 40em);
+@custom-media --lg (width >= 64em);
+@custom-media --xl (width >= 90em);
+
 /* global vars */
 :root {
 	/* Fluid font = calc(minPX + (max - min) * ((100vw - sm-mqPX) / (xlMQ - sm-mq))) */
 	--fluid-font: calc(
-		var(--min-font-size) + (1.125 - 0.95) * ((100vw - 21rem) / (90 - 21))
+		var(--min-font-size) + (1.125 - 0.95) * ((100vw - 21em) / (90 - 21))
 	);
 	--min-font-size: 0.95rem;
 	--max-font-size: 1.125rem;
-
 	--opacity: 0.7;
 	--root-color: $root-color;
 	--root-font-family: $root-font-family;
 	--paragraph-width: 64rem;
-	--container: 70rem;
-	--container-wide: 80rem;
+	--content-width: 70rem;
+	--content-wide: 80rem;
 	--h0: $h0;
 	--h1: $h1;
 	--h2: $h2;

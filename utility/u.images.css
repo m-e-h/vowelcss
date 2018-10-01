@@ -80,11 +80,13 @@
 
 .u-grad-overlay {
 	&::after {
-		background: -webkit-linear-gradient(
+		background:
+ -webkit-linear-gradient(
 			rgba(0, 0, 0, 0.1) 40%,
 			rgba(0, 0, 0, 0.6) 100%
 		);
-		background: -o-linear-gradient(
+		background:
+ -o-linear-gradient(
 			rgba(0, 0, 0, 0.1) 40%,
 			rgba(0, 0, 0, 0.6) 100%
 		);

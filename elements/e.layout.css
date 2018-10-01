@@ -5,14 +5,8 @@ body {
 	flex-direction: column;
 }
 
-body > header {
-	background-color: #fff;
-	padding: 0 $base-space;
-	display: flex;
-	justify-content: space-between;
-	flex-wrap: wrap;
-	align-items: center;
-	margin-bottom: $base-space;
+header {
+	width: 100%;
 }
 
 main {
@@ -25,6 +19,16 @@ main {
 
 article {
 	margin-bottom: $space-2;
+}
+
+body > header {
+	background-color: #fff;
+	padding: 0 $base-space;
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+	align-items: center;
+	margin-bottom: $base-space;
 }
 
 body > aside {

@@ -6,7 +6,7 @@ body.admin-bar {
 }
 
 .u-content-wrap > * {
-	max-width: var(--container);
+	max-width: var(--content-width);
 	margin-left: auto;
 	margin-right: auto;
 }
@@ -211,8 +211,10 @@ body.admin-bar {
 	transition-duration: $transition-time;
 	transition-timing-function: $animation-curve;
 	transition-property: opacity;
-	box-shadow: 0 9px 46px 8px rgba(0, 0, 0, 0.14),
-		0 11px 15px -7px rgba(0, 0, 0, 0.12), 0 24px 38px 3px currentColor;
+	box-shadow:
+ 0 9px 46px 8px rgba(0, 0, 0, 0.14),
+		0 11px 15px -7px rgba(0, 0, 0, 0.12),
+ 0 24px 38px 3px currentColor;
 }
 
 .shadow-hover:hover::after {
