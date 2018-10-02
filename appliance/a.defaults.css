@@ -7,6 +7,18 @@ $h4: 1.5rem;
 $h5: 1.25rem;
 $h6: 0.9rem;
 
+$base-line-height: 1.5;
+$heading-line-height: 1.25;
+
+$color-1: $blue5;
+$color-1-light: $blue3;
+$color-1-dark: $blue7;
+$color-2: $teal5;
+$color-2-light: $teal3;
+$color-2-dark: $teal7;
+
+$opacity: 0.7;
+
 $white: #fff;
 $silver: $gray0;
 $grey: $gray3;
@@ -22,12 +34,6 @@ $color-success-dark: $teal8;
 $color-warning: $red5;
 $color-warning-light: $red1;
 $color-warning-dark: $red9;
-$color-1: $blue5;
-$color-1-light: $blue3;
-$color-1-dark: $blue7;
-$color-2: $teal5;
-$color-2-light: $teal3;
-$color-2-dark: $teal7;
 $color-links: $indigo7;
 $color-links-hover: $indigo5;
 $color-text-light: $gray7;
@@ -103,4 +109,3 @@ $animation-enter: cubic-bezier(0, 0, 0.2, 1);
 $animation-exit: cubic-bezier(0.4, 0, 1, 1);
 $transition-time-out: 0.2s;
 $animation-curve-out: cubic-bezier(0, 0, 0.2, 1);
-$opacity: 0.7;

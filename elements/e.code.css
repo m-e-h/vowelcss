@@ -2,14 +2,14 @@ code,
 kbd,
 pre,
 samp {
-	font-family: $monospace-font-family;
+	font-family: var(--monospace-font-family);
 	color: #586e75;
 }
 
 code {
 	padding: 0.2em 0.3em;
 	margin: 0;
-	font-size: 85%;
+	font-size: $h6;
 	background-color: $color-frost-3;
 	border-radius: $border-radius;
 	word-break: break-word;
@@ -17,13 +17,13 @@ code {
 
 pre {
 	margin-top: 0;
-	margin-bottom: $base-space;
+	margin-bottom: var(--base-space);
 	padding: $space-1;
 	overflow: auto;
 	background-color: #fdf6e3;
 	border-radius: $border-radius;
 	word-wrap: normal;
-	max-height: 60vh;
+	max-height: 80vh;
 }
 
 pre code {
