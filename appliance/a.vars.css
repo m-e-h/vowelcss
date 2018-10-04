@@ -23,6 +23,12 @@
 	--color-2-light: $color-2-light;
 	--color-2-dark: $color-2-dark;
 
+	--opacity: $opacity;
+	--root-color: $root-color;
+	--paragraph-width: $paragraph-width;
+	--content-width: $content-width;
+	--content-wide: $content-wide;
+
 	/* Fluid font = calc(minPX + (max - min) * ((100vw - sm-mqPX) / (xlMQ - sm-mq))) */
 	--fluid-font: calc(
 		var(--min-font-size) + (1.125 - 0.95) * ((100vw - 21em) / (90 - 21))
@@ -30,11 +36,6 @@
 	--min-font-size: 0.95rem;
 	--max-font-size: 1.125rem;
 
-	--opacity: $opacity;
-	--root-color: $root-color;
-	--paragraph-width: 64rem;
-	--content-width: 70rem;
-	--content-wide: 80rem;
 	--h0: $h0;
 	--h1: $h1;
 	--h2: $h2;

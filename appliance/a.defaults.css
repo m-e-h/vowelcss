@@ -1,4 +1,9 @@
 
+
+$paragraph-width: 64rem;
+$content-width: 70rem;
+$content-wide: 80rem;
+
 $h0: 3.5rem;
 $h1: 2.5rem;
 $h2: 2rem;
@@ -82,9 +87,7 @@ $form-element-background-color: $color-frost-4;
 $form-element-min-height: 2.5rem;
 $monospace-font-family: "SFMono-Regular", "Roboto Mono", Consolas, Menlo,
 	Courier, monospace;
-$paragraph-width: 64rem;
-$container: 70rem;
-$container-wide: 80rem;
+
 $space-05: 0.5rem;
 $space-1: 1rem;
 $space-15: 1.5rem;
