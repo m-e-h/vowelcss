@@ -19,26 +19,8 @@
 }
 
 .u-link[class] {
+	@extend a;
 	color: $color-links;
-	text-decoration: none;
-	font-weight: 600;
-	letter-spacing: 0.02em;
-	vertical-align: middle;
-	transition-duration: $transition-time;
-	transition-timing-function: $animation-curve;
-	transition-property: all;
-	border-radius: 0.125rem;
-	box-shadow: inset 0 -1px 0 0 color-mod($color-grey-ui a(40%));
-}
-
-.u-link[class]:hover,
-.u-link[class].active,
-.u-link[class]:active,
-.u-link[class]:focus {
-	color: $color-links-hover;
-	background-color: color-mod($color-grey-ui a(20%));
-	transition-duration: $transition-time-out;
-	transition-timing-function: $animation-curve-out;
 }
 
 .u-strip-space {

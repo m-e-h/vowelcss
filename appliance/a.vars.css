@@ -9,13 +9,15 @@
 :root {
 	--base-space: $base-space;
 
-	--base-line-height: $base-line-height;
+	--line-height: $line-height;
 	--heading-line-height: $heading-line-height;
 
-	--root-font-family: $root-font-family;
+	--font-family: $font-family;
 	--display-font-family: $display-font-family;
 	--monospace-font-family: $monospace-font-family;
 
+	--color-text: $color-text;
+	--color-text-light: $color-text-light;
 	--color-1: $color-1;
 	--color-1-light: $color-1-light;
 	--color-1-dark: $color-1-dark;
@@ -24,7 +26,6 @@
 	--color-2-dark: $color-2-dark;
 
 	--opacity: $opacity;
-	--root-color: $root-color;
 	--paragraph-width: $paragraph-width;
 	--content-width: $content-width;
 	--content-wide: $content-wide;
@@ -55,8 +56,24 @@
 	--gutter: var(--base-space);
 	--gutter-half: 0.75rem;
 	--gutter-mobile: var(--space-1);
-	--transition-time: 0.16s;
-	--transition-time-out: 0.2s;
-	--animation-curve: cubic-bezier(0.4, 0, 1, 1);
-	--animation-curve-out: cubic-bezier(0, 0, 0.2, 1);
+
+	--color-frost-1: $color-frost-1;
+	--color-frost-2: $color-frost-2;
+	--color-frost-3: $color-frost-3;
+	--color-frost-4: $color-frost-4;
+	--color-shade-1: $color-shade-1;
+	--color-shade-2: $color-shade-2;
+	--color-shade-3: $color-shade-3;
+	--color-shade-4: $color-shade-4;
+	--color-tint-1: $color-tint-1;
+	--color-tint-2: $color-tint-2;
+	--color-tint-3: $color-tint-3;
+	--color-tint-4: $color-tint-4;
+
+	--timing: $base-timing;
+	--timing-open: $timing-open;
+	--timing-close: $timing-close;
+	--ease: $base-ease;
+	--ease-enter: $ease-enter;
+	--ease-exit: $ease-exit;
 }

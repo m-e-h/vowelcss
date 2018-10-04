@@ -32,5 +32,5 @@ figcaption {
 	margin-top: 0.5rem;
 	display: block;
 	font-size: $h6;
-	color: $color-text-light;
+	color: var(--color-text-light);
 }

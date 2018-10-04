@@ -9,11 +9,23 @@
 }
 
 .o-cell {
-	margin: 0 calc(0.5 * $gutter-mobile) calc(0.5 * $gutter);
+	width: calc(33.33333% - var(--gutter));
+	margin-left: calc(var(--gutter) / 2);
+	margin-right: calc(var(--gutter) / 2);
+	margin-bottom: var(--gutter);
 }
 
-@media (--md) {
+@supports (display: grid) {
+	.o-grid {
+		display: grid;
+		margin: 0;
+		grid-gap: 24px;
+		grid-template-columns: repeat(12, minmax(0, 1fr));
+	}
+
 	.o-cell {
-		margin: 0 calc(0.5 * $gutter) $gutter;
+		width: auto;
+		grid-column-end: span 4;
+		margin: 0;
 	}
 }

@@ -2,23 +2,23 @@
 \*------------------------------------ */
 
 .u-p {
-	padding: $base-space;
+	padding: var(--base-space);
 }
 
 .u-pt {
-	padding-top: $base-space;
+	padding-top: var(--base-space);
 }
 
 .u-pb {
-	padding-bottom: $base-space;
+	padding-bottom: var(--base-space);
 }
 
 .u-pr {
-	padding-right: $base-space;
+	padding-right: var(--base-space);
 }
 
 .u-pl {
-	padding-left: $base-space;
+	padding-left: var(--base-space);
 }
 
 .u-p05 {

@@ -7,27 +7,27 @@
 
 .u-h0 {
 	font-size: var(--h0);
-	line-height: 1.16;
+	line-height: var(--heading-line-height);
 }
 
 .u-h1 {
 	font-size: var(--h1);
-	line-height: 1.16;
+	line-height: var(--heading-line-height);
 }
 
 .u-h2 {
 	font-size: var(--h2);
-	line-height: 1.16;
+	line-height: var(--heading-line-height);
 }
 
 .u-h3 {
 	font-size: var(--h3);
-	line-height: 1.16;
+	line-height: var(--heading-line-height);
 }
 
 .u-h4 {
 	font-size: var(--h4);
-	line-height: 1.16;
+	line-height: var(--heading-line-height);
 }
 
 .u-f-plus,
@@ -57,7 +57,7 @@
 }
 
 .u-text-read {
-	font-family: $root-font-family;
+	font-family: var(--font-family);
 }
 
 .u-regular,
@@ -75,7 +75,7 @@
 }
 
 .u-text-shadow {
-	text-shadow: 0.063rem 0.063rem 0.313rem $color-tint-3;
+	text-shadow: 0.063rem 0.063rem 0.313rem var(--color-tint-3);
 }
 
 .u-text-left {
@@ -131,5 +131,5 @@
 
 .u-text-display,
 .u-dropcap::first-letter {
-	font-family: $display-font-family;
+	font-family: var(--display-font-family);
 }

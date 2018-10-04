@@ -85,10 +85,6 @@ body.admin-bar {
 
 .u-hyphenate {
 	overflow-wrap: break-word;
-	word-wrap: break-word;
-	-webkit-hyphens: auto;
-	-ms-hyphens: auto;
-	-moz-hyphens: auto;
 	hyphens: auto;
 }
 
@@ -208,8 +204,8 @@ body.admin-bar {
 	width: 100%;
 	height: 100%;
 	opacity: 0;
-	transition-duration: $transition-time;
-	transition-timing-function: $animation-curve;
+	transition-duration: var(--timing);
+	transition-timing-function: var(--ease);
 	transition-property: opacity;
 	box-shadow:
  0 9px 46px 8px rgba(0, 0, 0, 0.14),
@@ -223,8 +219,8 @@ body.admin-bar {
 
 .opacity-hover {
 	opacity: 1;
-	transition-duration: $transition-time;
-	transition-timing-function: $animation-curve;
+	transition-duration: var(--timing);
+	transition-timing-function: var(--ease);
 	transition-property: opacity;
 }
 

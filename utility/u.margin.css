@@ -1,23 +1,23 @@
 /* #WHITE SPACE
 \*------------------------------------ */
 .u-m {
-	margin: $base-space;
+	margin: var(--base-space);
 }
 
 .u-mt {
-	margin-top: $base-space;
+	margin-top: var(--base-space);
 }
 
 .u-mb {
-	margin-bottom: $base-space;
+	margin-bottom: var(--base-space);
 }
 
 .u-mr {
-	margin-right: $base-space;
+	margin-right: var(--base-space);
 }
 
 .u-ml {
-	margin-left: $base-space;
+	margin-left: var(--base-space);
 }
 
 .u-m05 {

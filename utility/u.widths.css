@@ -8,7 +8,7 @@
 }
 
 .u-text-wrap {
-	max-width: calc($paragraph-width + $base-space);
+	max-width: calc(var(--paragraph-width) + $base-space);
 	margin-left: auto;
 	margin-right: auto;
 }

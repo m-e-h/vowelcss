@@ -61,7 +61,7 @@ h4,
 h5,
 h6 {
 	font-weight: inherit;
-	line-height: 1.16;
+	line-height: var(--heading-line-height);
 	margin: 0 0 1rem;
 
 	& > a {

@@ -27,6 +27,8 @@ textarea {
 input,
 button {
 	overflow: visible;
+	transition-duration: var(--timing);
+	transition-timing-function: var(--ease);
 }
 
 /**
@@ -57,7 +59,7 @@ textarea {
 	font-size: 1rem;
 	line-height: 1.5;
 	background-color: $form-element-background-color;
-	color: $color-text-light;
+	color: var(--color-text-light);
 	vertical-align: baseline;
 	font-weight: inherit;
 

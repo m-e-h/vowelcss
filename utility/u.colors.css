@@ -3,7 +3,7 @@
 
 /* Text Colors */
 .u-text-color.u-text-color {
-	color: $root-color;
+	color: var(--color-text);
 }
 
 .u-text-black {
@@ -23,7 +23,7 @@
 }
 
 .u-text-white {
-	color: $white;
+	color: #fff;
 }
 
 .u-text-muted {
@@ -81,12 +81,12 @@
 
 .u-bg-silver {
 	background-color: $silver;
-	color: $root-color;
+	color: var(--color-text);
 }
 
 .u-bg-white {
-	background-color: $white;
-	color: $root-color;
+	background-color: #fff;
+	color: var(--color-text);
 }
 
 /* Border Colors */
@@ -150,39 +150,39 @@
 }
 
 .u-bg-frost-1 {
-	background-color: $color-frost-1;
+	background-color: var(--color-frost-1);
 }
 
 .u-bg-frost-2 {
-	background-color: $color-frost-2;
+	background-color: var(--color-frost-2);
 }
 
 .u-bg-frost-3.u-bg-frost-3 {
-	background-color: $color-frost-3;
+	background-color: var(--color-frost-3);
 }
 
 .u-bg-frost-4.u-bg-frost-4 {
-	background-color: $color-frost-4;
+	background-color: var(--color-frost-4);
 }
 
 .u-bg-tint-1 {
-	background-color: $color-tint-1;
+	background-color: var(--color-tint-1);
 }
 
 .u-bg-tint-2 {
-	background-color: $color-tint-2;
+	background-color: var(--color-tint-2);
 }
 
 .u-bg-tint-3 {
-	background-color: $color-tint-3;
+	background-color: var(--color-tint-3);
 }
 
 .u-bg-tint-4 {
-	background-color: $color-tint-4;
+	background-color: var(--color-tint-4);
 }
 
 .u-bg-mask {
-	background-color: $color-tint-3;
+	background-color: var(--color-tint-3);
 }
 
 .u-bg-1-glass {
@@ -209,16 +209,12 @@
 	background-color: color-mod(var(--color-2-dark) a(0.96));
 }
 
-.u-hover-white.u-hover-white:hover {
-	background-color: $white;
-}
-
-.u-hover-frost.u-hover-frost:hover {
-	background-color: $color-frost-2;
+.u-hover-frost:hover {
+	background-color: var(--color-frost-2);
 }
 
 .u-hover-tint:hover {
-	background-color: $color-tint-2;
+	background-color: var(--color-tint-2);
 }
 
 /* Fill Colors */

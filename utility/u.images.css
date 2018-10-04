@@ -64,15 +64,15 @@
 
 .u-frosted-image {
 	&::before {
-		background-color: $color-frost-3;
+		background-color: var(--color-frost-3);
 	}
 
-	color: $root-color;
+	color: var(--color-text);
 }
 
 .u-tinted-image {
 	&::before {
-		background-color: $color-tint-3;
+		background-color: var(--color-tint-3);
 	}
 
 	color: white;
@@ -99,7 +99,7 @@
 		width: 100%;
 	}
 
-	color: white;
+	color: var(--color-text-light);
 }
 
 .o-crop {
