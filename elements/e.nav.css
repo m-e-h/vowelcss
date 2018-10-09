@@ -4,6 +4,7 @@
 nav li {
 	flex: 1 auto;
 	position: relative;
+	margin: 0;
 }
 
 nav a {
@@ -19,7 +20,6 @@ nav a {
 header nav > ul {
 	display: flex;
 	flex-wrap: wrap;
-	list-style: none;
 	justify-content: space-around;
 	text-align: center;
 }

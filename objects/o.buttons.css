@@ -46,7 +46,7 @@ input[type="button"] {
 		box-shadow: $shadow-2;
 	}
 
-	a {
+	& a {
 		color: inherit;
 		width: $form-element-min-height;
 		height: $form-element-min-height;

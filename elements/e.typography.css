@@ -18,16 +18,8 @@ html {
 }
 
 p {
-	margin-top: 0;
-	margin-bottom: 1rem;
-}
-
-article p:last-of-type {
-	margin-bottom: 0;
-}
-
-article p:last-of-type + * {
 	margin-top: 1rem;
+	margin-bottom: 1rem;
 }
 
 h1 {
@@ -62,7 +54,7 @@ h5,
 h6 {
 	font-weight: inherit;
 	line-height: var(--heading-line-height);
-	margin: 0 0 1rem;
+	margin: 0 0 1em;
 
 	& > a {
 		color: inherit;
@@ -77,7 +69,6 @@ article h4,
 article h5,
 article h6 {
 	margin-top: 1.5em;
-	margin-bottom: 1em;
 }
 
 /* h1[class],

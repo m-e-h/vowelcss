@@ -4,7 +4,7 @@
 .breadcrumbs {
 	margin-bottom: $space-1;
 
-	ul {
+	& ul {
 		display: flex;
 		flex-wrap: wrap;
 		align-items: center;
@@ -12,7 +12,7 @@
 		font-size: $h5;
 	}
 
-	li {
+	& li {
 		display: inline-flex;
 		align-items: center;
 		font-style: italic;

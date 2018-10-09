@@ -47,7 +47,7 @@
 
 .u-frosted-image,
 .u-tinted-image {
-	> * {
+	& > * {
 		position: relative;
 	}
 }
@@ -79,17 +79,11 @@
 }
 
 .u-grad-overlay {
+	color: var(--color-text-light);
+
 	&::after {
-		background:
- -webkit-linear-gradient(
-			rgba(0, 0, 0, 0.1) 40%,
-			rgba(0, 0, 0, 0.6) 100%
-		);
-		background:
- -o-linear-gradient(
-			rgba(0, 0, 0, 0.1) 40%,
-			rgba(0, 0, 0, 0.6) 100%
-		);
+		background: -webkit-linear-gradient(rgba(0, 0, 0, 0.1) 40%, rgba(0, 0, 0, 0.6) 100%);
+		background: -o-linear-gradient(rgba(0, 0, 0, 0.1) 40%, rgba(0, 0, 0, 0.6) 100%);
 		background: linear-gradient(rgba(0, 0, 0, 0.1) 40%, rgba(0, 0, 0, 0.6));
 		content: "";
 		height: 100%;
@@ -98,8 +92,6 @@
 		left: 0;
 		width: 100%;
 	}
-
-	color: var(--color-text-light);
 }
 
 .o-crop {

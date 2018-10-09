@@ -3,8 +3,8 @@
 	list-style: none;
 	padding-left: 0;
 
-	> ul,
-	> li {
+	& > ul,
+	& > li {
 		list-style: none;
 		padding-left: 0;
 		margin-left: 0;
@@ -15,7 +15,7 @@
 	list-style-type: none;
 	padding-left: 0;
 
-	li {
+	& li {
 		counter-increment: step-counter;
 
 		&::before {
@@ -43,7 +43,7 @@
 	box-shadow: $shadow-1;
 	border-radius: $border-radius;
 
-	> li {
+	& > li {
 		position: relative;
 		display: inline-block;
 		width: 100%;

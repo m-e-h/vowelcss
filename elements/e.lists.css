@@ -5,35 +5,21 @@ ul,
 ol,
 dl {
 	list-style: none;
-	margin-top: 0;
-	margin-bottom: 1rem;
+	margin: 0;
+	padding: 0;
+}
+
+li {
+	margin-top: 0.5rem;
+	margin-bottom: 0.5rem;
+	padding: 0;
 }
 
 article ul,
 article ol,
 article dl {
 	list-style: initial;
-}
-
-article li {
-	margin-left: 1rem;
-	margin-bottom: 0.25rem;
-}
-
-section ol,
-section ul,
-nav ol,
-nav ul {
-	padding: 0;
-	margin: 0;
-}
-
-ol ol,
-ul ul,
-ol ul,
-ul ol,
-ul:last-child {
-	margin-bottom: 0;
+	padding-left: 2.5rem;
 }
 
 dt {
