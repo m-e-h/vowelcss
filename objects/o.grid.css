@@ -6,16 +6,18 @@
 	flex-wrap: wrap;
 	margin-right: auto;
 	margin-left: auto;
+	justify-content: space-around;
 }
 
 .o-cell {
-	width: calc(33.33333% - var(--gutter));
+	min-width: 300px;
+	max-width: calc(33.33333% - var(--gutter));
 	margin-left: calc(var(--gutter) / 2);
 	margin-right: calc(var(--gutter) / 2);
 	margin-bottom: var(--gutter);
 }
 
-@supports (display: grid) {
+/* @supports (display: grid) {
 	.o-grid {
 		display: grid;
 		margin: 0;
@@ -28,4 +30,4 @@
 		grid-column-end: span 4;
 		margin: 0;
 	}
-}
+} */

@@ -13,14 +13,14 @@
 	margin-right: auto;
 }
 
-.u-container {
+.u-content-width {
 	width: 100%;
 	max-width: var(--content-width);
 	margin-left: auto;
 	margin-right: auto;
 }
 
-.u-container-wide {
+.u-content-wide {
 	width: 100%;
 	max-width: var(--content-wide);
 	margin-left: auto;
