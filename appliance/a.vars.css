@@ -28,7 +28,7 @@
 	--opacity: $opacity;
 	--paragraph-width: $paragraph-width;
 	--content-width: $content-width;
-	--content-wide: $content-wide;
+	--content-wide: calc(var(--content-width) + 15vw);
 
 	/* Fluid font = calc(minPX + (max - min) * ((100vw - sm-mqPX) / (xlMQ - sm-mq))) */
 	--fluid-font: calc(
