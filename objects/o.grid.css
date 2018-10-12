@@ -11,10 +11,10 @@
 
 .o-cell {
 	min-width: 300px;
-	max-width: calc(33.33333% - var(--gutter));
-	margin-left: calc(var(--gutter) / 2);
-	margin-right: calc(var(--gutter) / 2);
-	margin-bottom: var(--gutter);
+	max-width: calc(33.33333% - var(--base-space));
+	margin-left: calc(var(--base-space) * 0.5);
+	margin-right: calc(var(--base-space) * 0.5);
+	margin-bottom: var(--base-space);
 }
 
 /* @supports (display: grid) {

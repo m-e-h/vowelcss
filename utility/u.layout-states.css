@@ -11,6 +11,12 @@ body.admin-bar {
 	margin-right: auto;
 }
 
+.u-content-wrap--wide > * {
+	max-width: var(--content-wide);
+	margin-left: auto;
+	margin-right: auto;
+}
+
 .u-inline {
 	display: inline;
 }

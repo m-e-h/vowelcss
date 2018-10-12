@@ -1,6 +1,7 @@
-$paragraph-width: 64rem;
-$content-width: 70rem;
-$content-wide: 80rem;
+
+$content-width: 50rem;
+$content-wide: 90rem;
+$base-space: 1.5rem;
 
 $h0: 3.5rem;
 $h1: 2.5rem;
@@ -38,7 +39,7 @@ $color-warning-light: $red1;
 $color-warning-dark: $red9;
 $color-links: $indigo7;
 $color-links-hover: $indigo5;
-$color-text-light: #fff;
+$color-text-light: $grey-nuetral;
 $color-text-dark: #121516;
 $color-grey-bg: $gray1;
 $color-grey-bg-light: $gray0;
@@ -93,7 +94,6 @@ $space-25: 2.5rem;
 $space-3: 3rem;
 $space-4: 4rem;
 $space-5: 5rem;
-$base-space: $space-15;
 $gutter: $base-space;
 $gutter-half: 0.75rem;
 $font-light: 300;

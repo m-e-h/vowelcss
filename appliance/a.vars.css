@@ -8,6 +8,7 @@
 /* global vars */
 :root {
 	--base-space: $base-space;
+	--gutter: calc(var(--base-space) * 1.5);
 
 	--line-height: $line-height;
 	--heading-line-height: $heading-line-height;
@@ -26,9 +27,8 @@
 	--color-2-dark: $color-2-dark;
 
 	--opacity: $opacity;
-	--paragraph-width: $paragraph-width;
 	--content-width: $content-width;
-	--content-wide: calc(var(--content-width) + 15vw);
+	--content-wide: calc(var(--content-width) + 30rem);
 
 	/* Fluid font = calc(minPX + (max - min) * ((100vw - sm-mqPX) / (xlMQ - sm-mq))) */
 	--fluid-font: calc(
@@ -53,8 +53,7 @@
 	--space-3: 3rem;
 	--space-4: 4rem;
 	--space-5: 5rem;
-	--gutter: var(--base-space);
-	--gutter-half: 0.75rem;
+	--gutter-half: calc(var(--base-space) * 0.5);
 	--gutter-mobile: var(--space-1);
 
 	--color-frost-1: $color-frost-1;
